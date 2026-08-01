@@ -6,6 +6,9 @@ import { PololuA4988StepperMotorDriverCarrier, SeeedXiaoRP2040 } from "../index"
  */
 export const XiaoRp2040A4988StepperController = () => (
   <board width="70mm" height="38mm">
+    <net name="USB_5V" isPowerNet />
+    <net name="LOGIC_3V3" isPowerNet />
+
     <SeeedXiaoRP2040 name="U_MCU" pcbX={-21} schX={-4} />
     <PololuA4988StepperMotorDriverCarrier name="U_DRIVER" pcbX={5} schX={1} />
 

@@ -1,0 +1,41 @@
+{
+  "name": "@tscircuit/header-modules",
+  "version": "0.0.1",
+  "description": "Female pin-header footprints for pluggable PCB modules",
+  "main": "index.ts",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tscircuit/header-modules.git"
+  },
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics",
+    "female-header",
+    "feather",
+    "xiao"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build",
+    "snapshot": "tsci snapshot",
+    "snapshot:update": "tsci snapshot --update",
+    "start": "tsci dev",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tscircuit/footprinter": "0.0.387",
+    "@tscircuit/props": "^0.0.604",
+    "@types/bun": "^1.3.14",
+    "@types/react": "^19.2.18",
+    "tscircuit": "^0.0.2193",
+    "typescript": "^5.0.0"
+  },
+  "patchedDependencies": {
+    "@tscircuit/footprinter@0.0.387": "patches/@tscircuit%2Ffootprinter@0.0.387.patch"
+  }
+}

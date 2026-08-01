@@ -124,7 +124,7 @@ export const AdafruitFeatherRP2040 = (
     pinLabels={ADAFRUIT_FEATHER_RP2040_PIN_LABELS}
     pinAttributes={ADAFRUIT_FEATHER_RP2040_PIN_ATTRIBUTES}
     schWidth={1.5}
-    schHeight={3.4}
+    schHeight={2.6}
     schPinArrangement={{
       leftSide: {
         direction: "top-to-bottom",

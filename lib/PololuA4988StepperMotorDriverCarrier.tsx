@@ -134,7 +134,7 @@ export const PololuA4988StepperMotorDriverCarrier = (
     pinLabels={POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_LABELS}
     pinAttributes={POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_ATTRIBUTES}
     schWidth={2}
-    schHeight={3.2}
+    schHeight={1.8}
     schPinArrangement={{
       leftSide: {
         direction: "top-to-bottom",

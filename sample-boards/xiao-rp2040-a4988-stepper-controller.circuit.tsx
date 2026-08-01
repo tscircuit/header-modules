@@ -34,6 +34,7 @@ export const XiaoRp2040A4988StepperController = () => (
       pcbRotation={90}
       schX={5}
       schY={1}
+      schWidth={0.39}
     />
     <capacitor
       name="C_VMOT"

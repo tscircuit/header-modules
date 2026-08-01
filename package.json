@@ -16,6 +16,7 @@
     "electronics",
     "female-header",
     "feather",
+    "rp2040",
     "xiao"
   ],
   "scripts": {

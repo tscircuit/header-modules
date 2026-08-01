@@ -1,2 +1,2 @@
-export * from "./lib/Feather"
-export * from "./lib/Xiao"
+export * from "./lib/AdafruitFeatherRP2040"
+export * from "./lib/SeeedXiaoRP2040"

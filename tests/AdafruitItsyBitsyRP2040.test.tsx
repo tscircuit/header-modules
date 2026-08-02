@@ -1,0 +1,15 @@
+import { expect, test } from "bun:test"
+import "bun-match-svg"
+import React from "react"
+import { Circuit } from "tscircuit"
+import { AdafruitItsyBitsyRP2040 } from "../lib/AdafruitItsyBitsyRP2040"
+
+test("Adafruit ItsyBitsy RP2040 PCB and schematic snapshots", async () => {
+  const circuit = new Circuit()
+  circuit.add(React.createElement(AdafruitItsyBitsyRP2040, { name: "U1" }))
+  await circuit.renderUntilSettled()
+  const pcbSvg = await circuit.getSvg({ view: "pcb" })
+  const schematicSvg = await circuit.getSvg({ view: "schematic" })
+  expect(pcbSvg).toMatchSvgSnapshot(import.meta.path, "pcb")
+  expect(schematicSvg).toMatchSvgSnapshot(import.meta.path, "schematic")
+})

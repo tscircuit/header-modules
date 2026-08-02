@@ -1,5 +1,5 @@
 diff --git a/dist/index.js b/dist/index.js
-index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282d93077b8 100644
+index 8d7db1f54405212128e9d64c0777170d9a7a75ee..e4eb953570e3c366435350a5307abf477fd52bbc 100644
 --- a/dist/index.js
 +++ b/dist/index.js
 @@ -31,6 +31,7 @@ __export(fn_exports, {
@@ -69,7 +69,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
      pinlabelAnchorSide,
      pinlabelverticallyinverted,
      pinlabelorthogonal,
-@@ -3323,16 +3348,37 @@ var pinrow = (raw_params) => {
+@@ -3323,16 +3348,38 @@ var pinrow = (raw_params) => {
      pinlabeltextalignright,
      nopinlabels,
      doublesidedpinlabel,
@@ -84,6 +84,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
    const holes = [];
 -  const numPinsPerRow = Math.ceil(num_pins / rows);
 -  const pinRowSpanY = (rows - 1) * p;
++  let pin1Position = null;
 +  const missingPositions = missing;
 +  const uniqueMissingPositions = /* @__PURE__ */ new Set(missingPositions);
 +  if (uniqueMissingPositions.size !== missingPositions.length) {
@@ -111,7 +112,15 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
    const calculateAnchorPosition = ({
      xoff,
      yoff,
-@@ -3455,8 +3501,22 @@ var pinrow = (raw_params) => {
+@@ -3380,6 +3427,7 @@ var pinrow = (raw_params) => {
+     return { anchor_x: xoff + dx, anchor_y: yoff + dy };
+   };
+   const addPin = (pinNumber, xoff, yoff) => {
++    if (pinNumber === 1) pin1Position = { x: xoff, y: yoff };
+     if (parameters.smd) {
+       holes.push(rectpad(pinNumber, xoff, yoff, parameters.pw, parameters.pl));
+     } else {
+@@ -3455,8 +3503,22 @@ var pinrow = (raw_params) => {
      }
    };
    const usedPositions = /* @__PURE__ */ new Set();
@@ -136,7 +145,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
      const xStart = -((num_pins - 1) / 2) * p;
      for (let i = 0; i < num_pins; i++) {
        const pinNumber = i + 1;
-@@ -3466,7 +3526,7 @@ var pinrow = (raw_params) => {
+@@ -3466,7 +3528,7 @@ var pinrow = (raw_params) => {
        usedPositions.add(posKey);
        addPin(pinNumber, xoff, 0);
      }
@@ -145,7 +154,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
      const xStart = -((numPinsPerRow - 1) / 2) * p;
      let currentPin = 1;
      for (let row = 0; row < rows && currentPin <= num_pins; row++) {
-@@ -3534,10 +3594,32 @@ var pinrow = (raw_params) => {
+@@ -3534,10 +3596,64 @@ var pinrow = (raw_params) => {
        );
      }
    }
@@ -165,6 +174,38 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
 +    { x: -silkscreenHalfWidth, y: silkscreenHalfHeight },
 +    { x: -silkscreenHalfWidth, y: -silkscreenHalfHeight }
 +  ]) : null;
++  const pin1Arrow = (() => {
++    if (parameters.fn !== "headermodule" || !pin1Position) return null;
++    const arrowSize = Math.max(0.3, Math.min(0.6, p / 4));
++    const clearance = 0.15;
++    const horizontal = pinlabelAnchorSide === "top" || pinlabelAnchorSide === "bottom";
++    if (horizontal) {
++      const direction = Math.sign(pin1Position.x) || (pinlabelAnchorSide === "top" ? -1 : 1);
++      const tipX = pin1Position.x + direction * (padHalfWidth + clearance);
++      const baseX = tipX + direction * arrowSize;
++      return silkscreenpath([
++        { x: tipX, y: pin1Position.y },
++        { x: baseX, y: pin1Position.y - arrowSize },
++        { x: baseX, y: pin1Position.y + arrowSize },
++        { x: tipX, y: pin1Position.y }
++      ], {
++        pcb_component_id: "pin_marker_1",
++        pcb_silkscreen_path_id: "pin_marker_1"
++      });
++    }
++    const direction = Math.sign(pin1Position.y) || 1;
++    const tipY = pin1Position.y + direction * (padHalfHeight + clearance);
++    const baseY = tipY + direction * arrowSize;
++    return silkscreenpath([
++      { x: pin1Position.x, y: tipY },
++      { x: pin1Position.x - arrowSize, y: baseY },
++      { x: pin1Position.x + arrowSize, y: baseY },
++      { x: pin1Position.x, y: tipY }
++    ], {
++      pcb_component_id: "pin_marker_1",
++      pcb_silkscreen_path_id: "pin_marker_1"
++    });
++  })();
 +  const refText = silkscreenlabel ? {
 +    type: "pcb_silkscreen_text",
 +    pcb_silkscreen_text_id: "silkscreen_text_1",
@@ -179,7 +220,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
    const padOuterHalfWidth = pinRowSpanX / 2 + padHalfWidth;
    const padOuterHalfHeight = pinRowSpanY / 2 + padHalfHeight;
    const bodyHalfWidth = pinRowSpanX / 2 + p / 2;
-@@ -3560,7 +3642,12 @@ var pinrow = (raw_params) => {
+@@ -3560,7 +3676,13 @@ var pinrow = (raw_params) => {
      layer: "top"
    };
    return {
@@ -187,6 +228,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
 +    circuitJson: [
 +      ...holes,
 +      ...(silkscreenBorder ? [silkscreenBorder] : []),
++      ...(pin1Arrow ? [pin1Arrow] : []),
 +      refText,
 +      courtyard
 +    ],

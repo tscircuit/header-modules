@@ -9,7 +9,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
  * product is represented by AdafruitItsyBitsyNRF52840Express.
  */
 export const ADAFRUIT_QT_PY_NRF52840_FOOTPRINT =
-  "pinrow14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+  "pinrow14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY NRF52840)" as const
 
 export const ADAFRUIT_QT_PY_NRF52840_PIN_LABELS = {
   pin1: ["A0"],
@@ -108,6 +108,22 @@ export const AdafruitQTPyNRF52840 = (props: AdafruitQTPyNRF52840Props) => (
     datasheetUrl="https://learn.adafruit.com/adafruit-qt-py/pinouts"
     footprint={ADAFRUIT_QT_PY_NRF52840_FOOTPRINT}
     pinLabels={ADAFRUIT_QT_PY_NRF52840_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "A0",
+      pin2: "A1",
+      pin3: "A2",
+      pin4: "A3",
+      pin5: "SDA",
+      pin6: "SCL",
+      pin7: "TX_A6",
+      pin8: "RX_A7",
+      pin9: "SCK",
+      pin10: "MISO",
+      pin11: "MOSI",
+      pin12: "V3_3",
+      pin13: "GND",
+      pin14: "V5",
+    }}
     pinAttributes={ADAFRUIT_QT_PY_NRF52840_PIN_ATTRIBUTES}
     schWidth={1.6}
     schHeight={2.2}

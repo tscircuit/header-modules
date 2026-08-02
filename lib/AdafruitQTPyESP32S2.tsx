@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit QT Py ESP32-S2: two seven-pin female header rows. */
 export const ADAFRUIT_QT_PY_ESP32_S2_FOOTPRINT =
-  "pinrow14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+  "pinrow14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY ESP32-S2)" as const
 
 export const ADAFRUIT_QT_PY_ESP32_S2_PIN_LABELS = {
   pin1: ["A0", "GPIO18"],
@@ -102,6 +102,22 @@ export const AdafruitQTPyESP32S2 = (props: AdafruitQTPyESP32S2Props) => (
     datasheetUrl="https://learn.adafruit.com/adafruit-qt-py-esp32-s2/pinouts"
     footprint={ADAFRUIT_QT_PY_ESP32_S2_FOOTPRINT}
     pinLabels={ADAFRUIT_QT_PY_ESP32_S2_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "A0",
+      pin2: "A1",
+      pin3: "A2",
+      pin4: "A3",
+      pin5: "SDA",
+      pin6: "SCL",
+      pin7: "TX",
+      pin8: "RX",
+      pin9: "SCK",
+      pin10: "MISO",
+      pin11: "MOSI",
+      pin12: "V3_3",
+      pin13: "GND",
+      pin14: "V5",
+    }}
     pinAttributes={ADAFRUIT_QT_PY_ESP32_S2_PIN_ATTRIBUTES}
     schWidth={1.6}
     schHeight={2.2}

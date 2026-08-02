@@ -6,7 +6,7 @@ import { rp2040Gpio } from "./rp2040PinAttributes"
  * USB is on the negative PCB X side when pcbRotation is zero.
  */
 export const ADAFRUIT_FEATHER_RP2040_FOOTPRINT =
-  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_nopinlabels" as const
+  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER RP2040)" as const
 
 export const ADAFRUIT_FEATHER_RP2040_PIN_LABELS = {
   // Short row, USB end to opposite end.
@@ -122,6 +122,36 @@ export const AdafruitFeatherRP2040 = (
     datasheetUrl="https://learn.adafruit.com/adafruit-feather-rp2040-pico/pinouts"
     footprint={ADAFRUIT_FEATHER_RP2040_FOOTPRINT}
     pinLabels={ADAFRUIT_FEATHER_RP2040_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "BAT",
+      pin2: "EN",
+      pin3: "USB",
+      pin4: "D13",
+      pin5: "D12",
+      pin6: "D11",
+      pin7: "D10",
+      pin8: "D9",
+      pin9: "D6",
+      pin10: "D5",
+      pin11: "SCL",
+      pin12: "SDA",
+      pin13: "RST",
+      pin14: "3V3",
+      pin15: "3V3_AREF",
+      pin16: "GND",
+      pin17: "A0",
+      pin18: "A1",
+      pin19: "A2",
+      pin20: "A3",
+      pin21: "D24",
+      pin22: "D25",
+      pin23: "SCK",
+      pin24: "MOSI",
+      pin25: "MISO",
+      pin26: "RX",
+      pin27: "TX",
+      pin28: "D4",
+    }}
     pinAttributes={ADAFRUIT_FEATHER_RP2040_PIN_ATTRIBUTES}
     schWidth={1.5}
     schHeight={2.6}

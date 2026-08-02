@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Arduino Nano 33 IoT: the 30-pin Nano header arrangement. */
 export const ARDUINO_NANO_33_IOT_FOOTPRINT =
-  "pinrow30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+  "pinrow30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO 33 IOT)" as const
 
 export const ARDUINO_NANO_33_IOT_PIN_LABELS = {
   pin1: ["TX", "D1"],
@@ -139,6 +139,38 @@ export const ArduinoNano33IoT = (props: ArduinoNano33IoTProps) => (
     datasheetUrl="https://docs.arduino.cc/resources/pinouts/ABX00027-full-pinout.pdf"
     footprint={ARDUINO_NANO_33_IOT_FOOTPRINT}
     pinLabels={ARDUINO_NANO_33_IOT_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "TX",
+      pin2: "RX",
+      pin3: "RESET",
+      pin4: "GND",
+      pin5: "D2",
+      pin6: "D3",
+      pin7: "D4",
+      pin8: "D5",
+      pin9: "D6",
+      pin10: "D7",
+      pin11: "D8",
+      pin12: "D9",
+      pin13: "D10",
+      pin14: "D11",
+      pin15: "D12",
+      pin16: "D13",
+      pin17: "3V3",
+      pin18: "AREF",
+      pin19: "A0",
+      pin20: "A1",
+      pin21: "A2",
+      pin22: "A3",
+      pin23: "A4",
+      pin24: "A5",
+      pin25: "A6",
+      pin26: "A7",
+      pin27: "V5",
+      pin28: "RESET_2",
+      pin29: "GND_2",
+      pin30: "VIN",
+    }}
     pinAttributes={ARDUINO_NANO_33_IOT_PIN_ATTRIBUTES}
     schWidth={2.1}
     schHeight={3.3}

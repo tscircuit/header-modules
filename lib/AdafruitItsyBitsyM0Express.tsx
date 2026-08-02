@@ -3,7 +3,7 @@ import { samdGpio } from "./samdPinAttributes"
 
 /** Adafruit ItsyBitsy M0 Express: two 14-pin female header rows. */
 export const ADAFRUIT_ITSYBITSY_M0_EXPRESS_FOOTPRINT =
-  "pinrow28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+  "pinrow28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(ITSY M0)" as const
 
 export const ADAFRUIT_ITSYBITSY_M0_EXPRESS_PIN_LABELS = {
   pin1: ["VBAT"],
@@ -118,6 +118,36 @@ export const AdafruitItsyBitsyM0Express = (
     datasheetUrl="https://learn.adafruit.com/introducing-itsy-bitsy-m0/pinouts"
     footprint={ADAFRUIT_ITSYBITSY_M0_EXPRESS_FOOTPRINT}
     pinLabels={ADAFRUIT_ITSYBITSY_M0_EXPRESS_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "VBAT",
+      pin2: "GND",
+      pin3: "VBUS",
+      pin4: "D13",
+      pin5: "D12",
+      pin6: "D11",
+      pin7: "D10",
+      pin8: "D9",
+      pin9: "D7",
+      pin10: "D5",
+      pin11: "SCL",
+      pin12: "SDA",
+      pin13: "TX",
+      pin14: "RX",
+      pin15: "D2",
+      pin16: "MISO",
+      pin17: "MOSI",
+      pin18: "SCK",
+      pin19: "A5",
+      pin20: "A4",
+      pin21: "A3",
+      pin22: "A2",
+      pin23: "A1",
+      pin24: "A0",
+      pin25: "VHI",
+      pin26: "EN",
+      pin27: "3V3",
+      pin28: "RESET",
+    }}
     pinAttributes={ADAFRUIT_ITSYBITSY_M0_EXPRESS_PIN_ATTRIBUTES}
     schWidth={1.8}
     schHeight={2.8}

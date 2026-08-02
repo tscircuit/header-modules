@@ -3,7 +3,7 @@ import { rp2040Gpio } from "./rp2040PinAttributes"
 
 /** Adafruit ItsyBitsy RP2040: two 14-pin female header rows. */
 export const ADAFRUIT_ITSYBITSY_RP2040_FOOTPRINT =
-  "pinrow28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+  "pinrow28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(ITSY RP2040)" as const
 
 export const ADAFRUIT_ITSYBITSY_RP2040_PIN_LABELS = {
   pin1: ["VBAT"],
@@ -113,6 +113,36 @@ export const AdafruitItsyBitsyRP2040 = (
     datasheetUrl="https://learn.adafruit.com/adafruit-itsybitsy-rp2040/pinouts"
     footprint={ADAFRUIT_ITSYBITSY_RP2040_FOOTPRINT}
     pinLabels={ADAFRUIT_ITSYBITSY_RP2040_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "VBAT",
+      pin2: "GND",
+      pin3: "VBUS",
+      pin4: "D13",
+      pin5: "D12",
+      pin6: "D11",
+      pin7: "D10",
+      pin8: "D9",
+      pin9: "D7",
+      pin10: "D5",
+      pin11: "SCL",
+      pin12: "SDA",
+      pin13: "TX",
+      pin14: "RX",
+      pin15: "D2",
+      pin16: "MISO",
+      pin17: "MOSI",
+      pin18: "SCK",
+      pin19: "D25",
+      pin20: "D24",
+      pin21: "A3",
+      pin22: "A2",
+      pin23: "A1",
+      pin24: "A0",
+      pin25: "VHI",
+      pin26: "V3_3",
+      pin27: "V3_3_2",
+      pin28: "RESET",
+    }}
     pinAttributes={ADAFRUIT_ITSYBITSY_RP2040_PIN_ATTRIBUTES}
     schWidth={1.8}
     schHeight={2.8}

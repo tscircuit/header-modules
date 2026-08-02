@@ -1,5 +1,6 @@
 import { expect, test } from "bun:test"
 import { fp } from "@tscircuit/footprinter"
+import * as catalog from "../index"
 import {
   ADAFRUIT_FEATHER_M0_EXPRESS_FOOTPRINT,
   ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES,
@@ -252,4 +253,37 @@ test("every Pololu A4988 carrier pin has pinAttributes", () => {
   expect(
     POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_ATTRIBUTES.DIR,
   ).toMatchObject({ mustBeConnected: true })
+})
+
+test("every catalog module has a female footprint and complete pinAttributes", () => {
+  const runtimeCatalog = catalog as Record<string, unknown>
+  const footprintExports = Object.keys(runtimeCatalog).filter((exportName) => {
+    if (!exportName.endsWith("_FOOTPRINT")) return false
+    const prefix = exportName.slice(0, -"_FOOTPRINT".length)
+    return `${prefix}_PIN_LABELS` in runtimeCatalog
+  })
+
+  expect(footprintExports.length).toBeGreaterThanOrEqual(428)
+
+  for (const footprintExport of footprintExports) {
+    const prefix = footprintExport.slice(0, -"_FOOTPRINT".length)
+    const footprint = runtimeCatalog[footprintExport] as string
+    const labels = runtimeCatalog[`${prefix}_PIN_LABELS`] as Record<
+      string,
+      readonly string[]
+    >
+    const attributes = runtimeCatalog[
+      `${prefix}_PIN_ATTRIBUTES`
+    ] as Record<string, unknown>
+    const primary = primaryLabels(labels)
+
+    expect(new Set(primary).size).toBe(primary.length)
+    expect(Object.keys(attributes).sort()).toEqual([...primary].sort())
+
+    const footprintCircuitJson = fp.string(footprint).circuitJson()
+    expect(fp.string(footprint).params().female).toBe(true)
+    expect(
+      footprintCircuitJson.filter((element) => element.type === "pcb_plated_hole"),
+    ).toHaveLength(primary.length)
+  }
 })

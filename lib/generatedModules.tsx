@@ -1527,95 +1527,6 @@ export const GENERIC4_PIN_ATTRIBUTES = {
   SIG2: GPIO,
 } as const satisfies Record<string, PinAttributeMap>
 
-/** Adafruit Feather nRF52840 Express — Bluetooth Feather-format board. */
-export const AdafruitFeatherNRF52840Express_PIN_LABELS = FEATHER28_PIN_LABELS
-export const AdafruitFeatherNRF52840Express_PIN_ATTRIBUTES = FEATHER28_PIN_ATTRIBUTES
-export const AdafruitFeatherNRF52840Express_FOOTPRINT = FOOTPRINT_F28
-export type AdafruitFeatherNRF52840ExpressProps = ChipProps<typeof AdafruitFeatherNRF52840Express_PIN_LABELS>
-export const AdafruitFeatherNRF52840Express = (props: AdafruitFeatherNRF52840ExpressProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit Feather nRF52840 Express"
-    mfn="Adafruit"
-    footprint={AdafruitFeatherNRF52840Express_FOOTPRINT}
-    pinLabels={AdafruitFeatherNRF52840Express_PIN_LABELS}
-    pinAttributes={AdafruitFeatherNRF52840Express_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
-/** Adafruit Feather STM32F405 Express — STM32 Feather-format board. */
-export const AdafruitFeatherSTM32F405Express_PIN_LABELS = FEATHER28_PIN_LABELS
-export const AdafruitFeatherSTM32F405Express_PIN_ATTRIBUTES = FEATHER28_PIN_ATTRIBUTES
-export const AdafruitFeatherSTM32F405Express_FOOTPRINT = FOOTPRINT_F28
-export type AdafruitFeatherSTM32F405ExpressProps = ChipProps<typeof AdafruitFeatherSTM32F405Express_PIN_LABELS>
-export const AdafruitFeatherSTM32F405Express = (props: AdafruitFeatherSTM32F405ExpressProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit Feather STM32F405 Express"
-    mfn="Adafruit"
-    footprint={AdafruitFeatherSTM32F405Express_FOOTPRINT}
-    pinLabels={AdafruitFeatherSTM32F405Express_PIN_LABELS}
-    pinAttributes={AdafruitFeatherSTM32F405Express_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
-
-/** Adafruit Feather ESP32 V2 — ESP32 Feather-format board. */
-export const AdafruitFeatherESP32V2_PIN_LABELS = FEATHER28_PIN_LABELS
-export const AdafruitFeatherESP32V2_PIN_ATTRIBUTES = FEATHER28_PIN_ATTRIBUTES
-export const AdafruitFeatherESP32V2_FOOTPRINT = FOOTPRINT_F28
-export type AdafruitFeatherESP32V2Props = ChipProps<typeof AdafruitFeatherESP32V2_PIN_LABELS>
-export const AdafruitFeatherESP32V2 = (props: AdafruitFeatherESP32V2Props) => (
-  <chip
-    {...props}
-    displayName="Adafruit Feather ESP32 V2"
-    mfn="Adafruit"
-    footprint={AdafruitFeatherESP32V2_FOOTPRINT}
-    pinLabels={AdafruitFeatherESP32V2_PIN_LABELS}
-    pinAttributes={AdafruitFeatherESP32V2_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
-
-/** Adafruit Feather ESP32-S2 — ESP32-S2 Feather-format board. */
-export const AdafruitFeatherESP32S2_PIN_LABELS = FEATHER28_PIN_LABELS
-export const AdafruitFeatherESP32S2_PIN_ATTRIBUTES = FEATHER28_PIN_ATTRIBUTES
-export const AdafruitFeatherESP32S2_FOOTPRINT = FOOTPRINT_F28
-export type AdafruitFeatherESP32S2Props = ChipProps<typeof AdafruitFeatherESP32S2_PIN_LABELS>
-export const AdafruitFeatherESP32S2 = (props: AdafruitFeatherESP32S2Props) => (
-  <chip
-    {...props}
-    displayName="Adafruit Feather ESP32-S2"
-    mfn="Adafruit"
-    footprint={AdafruitFeatherESP32S2_FOOTPRINT}
-    pinLabels={AdafruitFeatherESP32S2_PIN_LABELS}
-    pinAttributes={AdafruitFeatherESP32S2_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
-
-/** Adafruit Feather ESP32-S3 4MB Flash / 2MB PSRAM — ESP32-S3 Feather-format board. */
-export const AdafruitFeatherESP32S34MBFlash2MBPSRAM_PIN_LABELS = FEATHER28_PIN_LABELS
-export const AdafruitFeatherESP32S34MBFlash2MBPSRAM_PIN_ATTRIBUTES = FEATHER28_PIN_ATTRIBUTES
-export const AdafruitFeatherESP32S34MBFlash2MBPSRAM_FOOTPRINT = FOOTPRINT_F28
-export type AdafruitFeatherESP32S34MBFlash2MBPSRAMProps = ChipProps<typeof AdafruitFeatherESP32S34MBFlash2MBPSRAM_PIN_LABELS>
-export const AdafruitFeatherESP32S34MBFlash2MBPSRAM = (props: AdafruitFeatherESP32S34MBFlash2MBPSRAMProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit Feather ESP32-S3 4MB Flash / 2MB PSRAM"
-    mfn="Adafruit"
-    footprint={AdafruitFeatherESP32S34MBFlash2MBPSRAM_FOOTPRINT}
-    pinLabels={AdafruitFeatherESP32S34MBFlash2MBPSRAM_PIN_LABELS}
-    pinAttributes={AdafruitFeatherESP32S34MBFlash2MBPSRAM_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
-
 /** Adafruit Feather ESP32-S3 TFT — ESP32-S3 Feather-format board with display. */
 export const AdafruitFeatherESP32S3TFT_PIN_LABELS = FEATHER28_PIN_LABELS
 export const AdafruitFeatherESP32S3TFT_PIN_ATTRIBUTES = FEATHER28_PIN_ATTRIBUTES
@@ -9175,4 +9086,3 @@ export const Generic8ChannelLogicLevelConverterModule = (props: Generic8ChannelL
     schHeight={1.8}
   />
 )
-

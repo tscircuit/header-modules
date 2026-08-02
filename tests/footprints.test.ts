@@ -8,9 +8,24 @@ import {
   ADAFRUIT_FEATHER_M4_EXPRESS_FOOTPRINT,
   ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES,
   ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS,
+  ADAFRUIT_FEATHER_NRF52840_EXPRESS_FOOTPRINT,
+  ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_ATTRIBUTES,
+  ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS,
   ADAFRUIT_FEATHER_RP2040_FOOTPRINT,
   ADAFRUIT_FEATHER_RP2040_PIN_ATTRIBUTES,
   ADAFRUIT_FEATHER_RP2040_PIN_LABELS,
+  ADAFRUIT_FEATHER_STM32F405_EXPRESS_FOOTPRINT,
+  ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_ATTRIBUTES,
+  ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS,
+  ADAFRUIT_FEATHER_ESP32_V2_FOOTPRINT,
+  ADAFRUIT_FEATHER_ESP32_V2_PIN_ATTRIBUTES,
+  ADAFRUIT_FEATHER_ESP32_V2_PIN_LABELS,
+  ADAFRUIT_FEATHER_ESP32_S2_FOOTPRINT,
+  ADAFRUIT_FEATHER_ESP32_S2_PIN_ATTRIBUTES,
+  ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS,
+  ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_FOOTPRINT,
+  ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_ATTRIBUTES,
+  ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_LABELS,
   POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_FOOTPRINT,
   POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_ATTRIBUTES,
   POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_LABELS,
@@ -143,9 +158,9 @@ test("every Feather RP2040 header pin has pinAttributes", () => {
 })
 
 test("every Feather M0 Express header pin has pinAttributes", () => {
-  expect(Object.keys(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES).sort()).toEqual(
-    primaryLabels(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS).sort(),
-  )
+  expect(
+    Object.keys(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES).sort(),
+  ).toEqual(primaryLabels(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS).sort())
   expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS.pin4).toContain("PA17")
   expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS.pin8).toContain("A7")
   expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS.pin23).toContain("PB11")
@@ -169,9 +184,9 @@ test("every Feather M0 Express header pin has pinAttributes", () => {
 })
 
 test("every Feather M4 Express header pin has pinAttributes", () => {
-  expect(Object.keys(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES).sort()).toEqual(
-    primaryLabels(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS).sort(),
-  )
+  expect(
+    Object.keys(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES).sort(),
+  ).toEqual(primaryLabels(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS).sort())
   expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS.pin4).toContain("PA23")
   expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS.pin17).toContain("DAC0")
   expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS.pin23).toContain("PA17")
@@ -186,12 +201,99 @@ test("every Feather M4 Express header pin has pinAttributes", () => {
   expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.SDA.capabilities).toContain(
     "i2c_sda",
   )
-  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.MOSI.capabilities).toContain(
-    "spi_mosi",
-  )
+  expect(
+    ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.MOSI.capabilities,
+  ).toContain("spi_mosi")
   expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.TX.capabilities).toContain(
     "uart_tx",
   )
+})
+
+test("Feather nRF52840 Express uses the researched nRF52840 aliases", () => {
+  expect(
+    Object.keys(ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_ATTRIBUTES).sort(),
+  ).toEqual(primaryLabels(ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS).sort())
+  expect(ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS.pin4).toContain("P1.09")
+  expect(ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS.pin28).toContain("NFC2")
+  expect(ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_ATTRIBUTES.SCL).toMatchObject({
+    needsExternalPullup: true,
+  })
+  expect(
+    fp.string(ADAFRUIT_FEATHER_NRF52840_EXPRESS_FOOTPRINT).params().female,
+  ).toBe(true)
+})
+
+test("Feather STM32F405 Express uses its STM32F405 header aliases", () => {
+  expect(
+    Object.keys(ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_ATTRIBUTES).sort(),
+  ).toEqual(primaryLabels(ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS).sort())
+  expect(ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS.pin4).toContain("PC1")
+  expect(ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS.pin17).toContain("PA4")
+  expect(ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS.pin28).toContain("BOOT0")
+  expect(
+    ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_ATTRIBUTES.SDA.capabilities,
+  ).toContain("i2c_sda")
+  expect(
+    fp.string(ADAFRUIT_FEATHER_STM32F405_EXPRESS_FOOTPRINT).params().female,
+  ).toBe(true)
+})
+
+test("ESP32 Feather V2 preserves its NC and input-only header positions", () => {
+  expect(Object.keys(ADAFRUIT_FEATHER_ESP32_V2_PIN_ATTRIBUTES).sort()).toEqual(
+    primaryLabels(ADAFRUIT_FEATHER_ESP32_V2_PIN_LABELS).sort(),
+  )
+  expect(ADAFRUIT_FEATHER_ESP32_V2_PIN_LABELS.pin15).toEqual(["NC"])
+  expect(ADAFRUIT_FEATHER_ESP32_V2_PIN_LABELS.pin17).toContain("DAC2")
+  expect(ADAFRUIT_FEATHER_ESP32_V2_PIN_LABELS.pin28).toContain("GPIO37")
+  expect(ADAFRUIT_FEATHER_ESP32_V2_PIN_ATTRIBUTES.NC).toMatchObject({
+    doNotConnect: true,
+  })
+  expect(fp.string(ADAFRUIT_FEATHER_ESP32_V2_FOOTPRINT).params().female).toBe(
+    true,
+  )
+})
+
+test("ESP32-S2 Feather preserves its second 3V3 and debug TX positions", () => {
+  expect(Object.keys(ADAFRUIT_FEATHER_ESP32_S2_PIN_ATTRIBUTES).sort()).toEqual(
+    primaryLabels(ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS).sort(),
+  )
+  expect(ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS.pin11).toContain("GPIO4")
+  expect(ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS.pin17).toContain("DAC_2")
+  expect(ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS.pin15).toContain("3V3")
+  expect(ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS.pin28).toContain("DEBUG_TX")
+  expect(ADAFRUIT_FEATHER_ESP32_S2_PIN_ATTRIBUTES.DEBUG_TX).toMatchObject({
+    capabilities: ["uart_tx"],
+  })
+  expect(fp.string(ADAFRUIT_FEATHER_ESP32_S2_FOOTPRINT).params().female).toBe(
+    true,
+  )
+})
+
+test("ESP32-S3 4MB/2MB Feather has no DAC aliases", () => {
+  expect(
+    Object.keys(
+      ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_ATTRIBUTES,
+    ).sort(),
+  ).toEqual(
+    primaryLabels(
+      ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_LABELS,
+    ).sort(),
+  )
+  expect(
+    ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_LABELS.pin17,
+  ).not.toContain("DAC_2")
+  expect(
+    ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_LABELS.pin28,
+  ).toContain("TXD0")
+  expect(
+    ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_ATTRIBUTES.A0,
+  ).toMatchObject({
+    isGpio: true,
+  })
+  expect(
+    fp.string(ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_FOOTPRINT).params()
+      .female,
+  ).toBe(true)
 })
 
 test("every XIAO RP2040 header pin has pinAttributes", () => {
@@ -272,9 +374,10 @@ test("every catalog module has a female footprint and complete pinAttributes", (
       string,
       readonly string[]
     >
-    const attributes = runtimeCatalog[
-      `${prefix}_PIN_ATTRIBUTES`
-    ] as Record<string, unknown>
+    const attributes = runtimeCatalog[`${prefix}_PIN_ATTRIBUTES`] as Record<
+      string,
+      unknown
+    >
     const primary = primaryLabels(labels)
 
     expect(new Set(primary).size).toBe(primary.length)
@@ -283,7 +386,9 @@ test("every catalog module has a female footprint and complete pinAttributes", (
     const footprintCircuitJson = fp.string(footprint).circuitJson()
     expect(fp.string(footprint).params().female).toBe(true)
     expect(
-      footprintCircuitJson.filter((element) => element.type === "pcb_plated_hole"),
+      footprintCircuitJson.filter(
+        (element) => element.type === "pcb_plated_hole",
+      ),
     ).toHaveLength(primary.length)
   }
 })

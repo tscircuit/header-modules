@@ -1,3 +1,5 @@
+export * from "./lib/AdafruitFeatherM0Express"
+export * from "./lib/AdafruitFeatherM4Express"
 export * from "./lib/AdafruitFeatherRP2040"
 export * from "./lib/PololuA4988StepperMotorDriverCarrier"
 export * from "./lib/SeeedXiaoRP2040"

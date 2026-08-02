@@ -35,6 +35,10 @@ list was reviewed on 2026-08-01 against current catalogs and documentation from
 Already implemented and intentionally omitted: Adafruit Feather RP2040,
 Seeed XIAO RP2040, and Pololu A4988 Stepper Motor Driver Carrier.
 
+Implemented on the current branch: Adafruit Feather M0 Express and Adafruit
+Feather M4 Express. Their checked items remain in the list as an audit trail;
+the component source and tests are the authoritative implementation record.
+
 Current backlog: **427 distinct module candidates**.
 
 | Category | Candidates |
@@ -55,8 +59,8 @@ Current backlog: **427 distinct module candidates**.
 
 ## Microcontroller and development boards
 
-- [ ] **Adafruit Feather M0 Express** — SAMD21 Feather-format board
-- [ ] **Adafruit Feather M4 Express** — SAMD51 Feather-format board
+- [x] **Adafruit Feather M0 Express** — SAMD21 Feather-format board
+- [x] **Adafruit Feather M4 Express** — SAMD51 Feather-format board
 - [ ] **Adafruit Feather nRF52840 Express** — Bluetooth Feather-format board
 - [ ] **Adafruit Feather STM32F405 Express** — STM32 Feather-format board
 - [ ] **Adafruit Feather ESP32 V2** — ESP32 Feather-format board

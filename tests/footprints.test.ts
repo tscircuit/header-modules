@@ -1,6 +1,12 @@
 import { expect, test } from "bun:test"
 import { fp } from "@tscircuit/footprinter"
 import {
+  ADAFRUIT_FEATHER_M0_EXPRESS_FOOTPRINT,
+  ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES,
+  ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS,
+  ADAFRUIT_FEATHER_M4_EXPRESS_FOOTPRINT,
+  ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES,
+  ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS,
   ADAFRUIT_FEATHER_RP2040_FOOTPRINT,
   ADAFRUIT_FEATHER_RP2040_PIN_ATTRIBUTES,
   ADAFRUIT_FEATHER_RP2040_PIN_LABELS,
@@ -29,6 +35,34 @@ const getRows = (holes: PlatedHole[]) =>
 test("Adafruit Feather RP2040 is a 12+16 female header footprint", () => {
   const footprint = fp.string(ADAFRUIT_FEATHER_RP2040_FOOTPRINT)
   const holes = getPlatedHoles(ADAFRUIT_FEATHER_RP2040_FOOTPRINT)
+  const rows = getRows(holes)
+
+  expect(footprint.params().female).toBe(true)
+  expect(holes).toHaveLength(28)
+  expect(rows).toHaveLength(2)
+  expect(rows[1] - rows[0]).toBeCloseTo(20.32)
+  expect(rows.map((y) => holes.filter((hole) => hole.y === y).length)).toEqual([
+    16, 12,
+  ])
+})
+
+test("Adafruit Feather M0 Express is a 12+16 female header footprint", () => {
+  const footprint = fp.string(ADAFRUIT_FEATHER_M0_EXPRESS_FOOTPRINT)
+  const holes = getPlatedHoles(ADAFRUIT_FEATHER_M0_EXPRESS_FOOTPRINT)
+  const rows = getRows(holes)
+
+  expect(footprint.params().female).toBe(true)
+  expect(holes).toHaveLength(28)
+  expect(rows).toHaveLength(2)
+  expect(rows[1] - rows[0]).toBeCloseTo(20.32)
+  expect(rows.map((y) => holes.filter((hole) => hole.y === y).length)).toEqual([
+    16, 12,
+  ])
+})
+
+test("Adafruit Feather M4 Express is a 12+16 female header footprint", () => {
+  const footprint = fp.string(ADAFRUIT_FEATHER_M4_EXPRESS_FOOTPRINT)
+  const holes = getPlatedHoles(ADAFRUIT_FEATHER_M4_EXPRESS_FOOTPRINT)
   const rows = getRows(holes)
 
   expect(footprint.params().female).toBe(true)
@@ -104,6 +138,58 @@ test("every Feather RP2040 header pin has pinAttributes", () => {
   )
   expect(ADAFRUIT_FEATHER_RP2040_PIN_ATTRIBUTES.RX.capabilities).toEqual(
     expect.arrayContaining(["uart_rx", "spi_cs", "i2c_scl"]),
+  )
+})
+
+test("every Feather M0 Express header pin has pinAttributes", () => {
+  expect(Object.keys(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES).sort()).toEqual(
+    primaryLabels(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS).sort(),
+  )
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS.pin4).toContain("PA17")
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS.pin8).toContain("A7")
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_LABELS.pin23).toContain("PB11")
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES.USB).toMatchObject({
+    requiresPower: true,
+    providesPower: true,
+    requiresVoltage: "5V",
+  })
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES.SCL.capabilities).toContain(
+    "i2c_scl",
+  )
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES.SDA.capabilities).toContain(
+    "i2c_sda",
+  )
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES.SCK.capabilities).toContain(
+    "spi_sck",
+  )
+  expect(ADAFRUIT_FEATHER_M0_EXPRESS_PIN_ATTRIBUTES.RX.capabilities).toContain(
+    "uart_rx",
+  )
+})
+
+test("every Feather M4 Express header pin has pinAttributes", () => {
+  expect(Object.keys(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES).sort()).toEqual(
+    primaryLabels(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS).sort(),
+  )
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS.pin4).toContain("PA23")
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS.pin17).toContain("DAC0")
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_LABELS.pin23).toContain("PA17")
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES["3V"]).toMatchObject({
+    providesPower: true,
+    providesVoltage: "3.3V",
+  })
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.GND).toMatchObject({
+    requiresGround: true,
+    providesGround: true,
+  })
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.SDA.capabilities).toContain(
+    "i2c_sda",
+  )
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.MOSI.capabilities).toContain(
+    "spi_mosi",
+  )
+  expect(ADAFRUIT_FEATHER_M4_EXPRESS_PIN_ATTRIBUTES.TX.capabilities).toContain(
+    "uart_tx",
   )
 })
 

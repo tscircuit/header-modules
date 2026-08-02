@@ -3,7 +3,12 @@
 Model-specific tscircuit components for development boards that plug into
 female pin headers.
 
-The package currently includes:
+The package includes the original model-specific modules plus a catalog of
+popular breadboard/header modules from Adafruit, SparkFun, Pololu, Seeed,
+Arduino, Raspberry Pi, and common marketplace families. The catalog currently
+contains all 427 entries tracked in [`TODOS.md`](./TODOS.md).
+
+The first concrete model-specific modules are:
 
 - `AdafruitFeatherRP2040`: the Adafruit Feather RP2040 with one 12-pin row,
   one 16-pin row, and the supported I2C/SPI/UART mux capabilities for every
@@ -19,11 +24,18 @@ footprinter string. Every exposed header pin has `pinAttributes`, including
 GPIO behavior, internal pull support, I2C/SPI/UART capabilities, and explicit
 power/ground direction and voltage where applicable.
 
+Catalog entries use explicit interface-level header maps (for example, VCC,
+GND, SDA, and SCL for an I2C breakout) and are exported as named components,
+so a board can be designed against a stable female-header socket immediately.
+The existing Feather, XIAO, Nano, Pico, and other development-board models use
+their own form-factor pin maps.
+
 ## Usage
 
 ```tsx
 import {
   AdafruitFeatherRP2040,
+  AdafruitAHT20TemperatureAndHumidityBreakout,
   PololuA4988StepperMotorDriverCarrier,
   SeeedXiaoRP2040,
 } from "@tscircuit/header-modules"
@@ -33,6 +45,7 @@ export default () => (
     <AdafruitFeatherRP2040 name="U1" pcbX={-20} />
     <SeeedXiaoRP2040 name="U2" pcbX={30} />
     <PololuA4988StepperMotorDriverCarrier name="U3" pcbX={50} />
+    <AdafruitAHT20TemperatureAndHumidityBreakout name="U4" pcbX={70} />
   </board>
 )
 ```

@@ -32,7 +32,7 @@ export const ADAFRUIT_ITSYBITSY_M4_EXPRESS_PIN_LABELS = {
   pin24: ["A0"],
   pin25: ["VHI"],
   pin26: ["AREF"],
-  pin27: ["+3V3", "3V3"],
+  pin27: ["V3_3", "3V3"],
   pin28: ["RESET", "RST"],
 } as const
 
@@ -82,7 +82,7 @@ export const ADAFRUIT_ITSYBITSY_M4_EXPRESS_PIN_ATTRIBUTES = {
   A0: GPIO,
   VHI: { includeInBoardPinout: true },
   AREF: { includeInBoardPinout: true },
-  "+3V3": {
+  V3_3: {
     providesPower: true,
     providesVoltage: "3.3V",
     includeInBoardPinout: true,
@@ -137,7 +137,7 @@ export const AdafruitItsyBitsyM4Express = (
           "A0",
           "VHI",
           "AREF",
-          "+3V3",
+          "V3_3",
           "RESET",
         ],
       },

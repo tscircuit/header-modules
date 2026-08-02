@@ -22,8 +22,8 @@ export const ADAFRUIT_FEATHER_ESP32_S3_4MB_FLASH_2MB_PSRAM_PIN_LABELS = {
   // Long row, USB end to opposite end. The final position is the board's
   // debug UART TX connection rather than a general-purpose GPIO.
   pin13: ["RST", "RESET"],
-  pin14: ["3V3", "3.3V"],
-  pin15: ["3V3_2", "3V3", "3.3V"],
+  pin14: ["3V3", "V3_3"],
+  pin15: ["3V3_2", "3V3", "V3_3"],
   pin16: ["GND"],
   pin17: ["A0", "GPIO18", "ADC2_CH7"],
   pin18: ["A1", "GPIO17", "ADC2_CH6"],

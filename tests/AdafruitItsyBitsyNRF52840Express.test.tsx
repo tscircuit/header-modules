@@ -10,6 +10,11 @@ test("Adafruit ItsyBitsy nRF52840 Express PCB and schematic snapshots", async ()
     React.createElement(AdafruitItsyBitsyNRF52840Express, { name: "U1" }),
   )
   await circuit.renderUntilSettled()
+  expect(
+    circuit
+      .getCircuitJson()
+      .filter((element) => element.type === "source_failed_to_create_component_error"),
+  ).toHaveLength(0)
   const pcbSvg = await circuit.getSvg({ view: "pcb" })
   const schematicSvg = await circuit.getSvg({ view: "schematic" })
   expect(pcbSvg).toMatchSvgSnapshot(import.meta.path, "pcb")

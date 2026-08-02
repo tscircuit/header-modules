@@ -31,7 +31,7 @@ export const ARDUINO_NANO_EVERY_PIN_LABELS = {
   pin24: ["A5", "SCL"],
   pin25: ["A6"],
   pin26: ["A7"],
-  pin27: ["+5V", "5V"],
+  pin27: ["V5", "5V"],
   pin28: ["RESET_2", "RST"],
   pin29: ["GND_2", "GND"],
   pin30: ["VIN"],
@@ -97,7 +97,7 @@ export const ARDUINO_NANO_EVERY_PIN_ATTRIBUTES = {
   A5: I2C_SCL,
   A6: GPIO,
   A7: GPIO,
-  "+5V": {
+  V5: {
     requiresPower: true,
     providesPower: true,
     requiresVoltage: "5V",
@@ -177,7 +177,7 @@ export const ArduinoNanoEvery = (props: ArduinoNanoEveryProps) => (
           "A5",
           "A6",
           "A7",
-          "+5V",
+          "V5",
           "RESET_2",
           "GND_2",
           "VIN",

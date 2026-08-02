@@ -31,8 +31,8 @@ export const ADAFRUIT_ITSYBITSY_RP2040_PIN_LABELS = {
   pin23: ["A1", "GP27", "GPIO27"],
   pin24: ["A0", "GP26", "GPIO26"],
   pin25: ["VHI"],
-  pin26: ["+3V3", "3V3"],
-  pin27: ["+3V3_2", "3V3"],
+  pin26: ["V3_3", "3V3"],
+  pin27: ["V3_3_2", "3V3"],
   pin28: ["RESET", "RUN", "RST"],
 } as const
 
@@ -72,12 +72,12 @@ export const ADAFRUIT_ITSYBITSY_RP2040_PIN_ATTRIBUTES = {
   A1: rp2040Gpio(27),
   A0: rp2040Gpio(26),
   VHI: { includeInBoardPinout: true },
-  "+3V3": {
+  V3_3: {
     providesPower: true,
     providesVoltage: "3.3V",
     includeInBoardPinout: true,
   },
-  "+3V3_2": {
+  V3_3_2: {
     providesPower: true,
     providesVoltage: "3.3V",
     includeInBoardPinout: true,
@@ -131,8 +131,8 @@ export const AdafruitItsyBitsyRP2040 = (
           "A1",
           "A0",
           "VHI",
-          "+3V3",
-          "+3V3_2",
+          "V3_3",
+          "V3_3_2",
           "RESET",
         ],
       },

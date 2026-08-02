@@ -17,9 +17,9 @@ export const ADAFRUIT_QT_PY_SAMD21_PIN_LABELS = {
   pin9: ["SCK"],
   pin10: ["MISO"],
   pin11: ["MOSI"],
-  pin12: ["3.3V", "3V3"],
+  pin12: ["V3_3", "3V3"],
   pin13: ["GND"],
-  pin14: ["+5V", "5V"],
+  pin14: ["V5", "5V"],
 } as const
 
 export const ADAFRUIT_QT_PY_SAMD21_PIN_ATTRIBUTES = {
@@ -40,7 +40,7 @@ export const ADAFRUIT_QT_PY_SAMD21_PIN_ATTRIBUTES = {
   SCK: samdGpio(["spi_sck"]),
   MISO: samdGpio(["spi_miso"]),
   MOSI: samdGpio(["spi_mosi"]),
-  "3.3V": {
+  V3_3: {
     providesPower: true,
     providesVoltage: "3.3V",
     includeInBoardPinout: true,
@@ -50,7 +50,7 @@ export const ADAFRUIT_QT_PY_SAMD21_PIN_ATTRIBUTES = {
     providesGround: true,
     includeInBoardPinout: true,
   },
-  "+5V": {
+  V5: {
     requiresPower: true,
     providesPower: true,
     requiresVoltage: "5V",
@@ -95,7 +95,7 @@ export const AdafruitQTPySAMD21 = (props: AdafruitQTPySAMD21Props) => (
       },
       rightSide: {
         direction: "top-to-bottom",
-        pins: ["RX_A7", "SCK", "MISO", "MOSI", "3.3V", "GND", "+5V"],
+        pins: ["RX_A7", "SCK", "MISO", "MOSI", "V3_3", "GND", "V5"],
       },
     }}
   />

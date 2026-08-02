@@ -16,9 +16,9 @@ export const ADAFRUIT_QT_PY_ESP32_S3_PIN_LABELS = {
   pin9: ["SCK", "GPIO36"],
   pin10: ["MISO", "GPIO37"],
   pin11: ["MOSI", "GPIO35"],
-  pin12: ["3.3V", "3V3"],
+  pin12: ["V3_3", "3V3"],
   pin13: ["GND"],
-  pin14: ["+5V", "5V"],
+  pin14: ["V5", "5V"],
 } as const
 
 const GPIO = {
@@ -57,7 +57,7 @@ export const ADAFRUIT_QT_PY_ESP32_S3_PIN_ATTRIBUTES = {
   SCK: SPI_SCK,
   MISO: SPI_MISO,
   MOSI: SPI_MOSI,
-  "3.3V": {
+  V3_3: {
     providesPower: true,
     providesVoltage: "3.3V",
     includeInBoardPinout: true,
@@ -67,7 +67,7 @@ export const ADAFRUIT_QT_PY_ESP32_S3_PIN_ATTRIBUTES = {
     providesGround: true,
     includeInBoardPinout: true,
   },
-  "+5V": {
+  V5: {
     requiresPower: true,
     providesPower: true,
     requiresVoltage: "5V",
@@ -112,7 +112,7 @@ export const AdafruitQTPyESP32S3 = (props: AdafruitQTPyESP32S3Props) => (
       },
       rightSide: {
         direction: "top-to-bottom",
-        pins: ["RX", "SCK", "MISO", "MOSI", "3.3V", "GND", "+5V"],
+        pins: ["RX", "SCK", "MISO", "MOSI", "V3_3", "GND", "V5"],
       },
     }}
   />

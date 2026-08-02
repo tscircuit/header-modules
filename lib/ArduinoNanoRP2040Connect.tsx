@@ -31,7 +31,7 @@ export const ARDUINO_NANO_RP2040_CONNECT_PIN_LABELS = {
   pin24: ["A5", "SCL", "GPIO13"],
   pin25: ["A6"],
   pin26: ["A7"],
-  pin27: ["+5V", "5V"],
+  pin27: ["V5", "5V"],
   pin28: ["QSPI_CSn", "REC"],
   pin29: ["GND_2", "GND"],
   pin30: ["VIN"],
@@ -89,7 +89,7 @@ export const ARDUINO_NANO_RP2040_CONNECT_PIN_ATTRIBUTES = {
   A5: I2C_SCL,
   A6: GPIO,
   A7: GPIO,
-  "+5V": {
+  V5: {
     requiresPower: true,
     providesPower: true,
     requiresVoltage: "5V",
@@ -171,7 +171,7 @@ export const ArduinoNanoRP2040Connect = (
           "A5",
           "A6",
           "A7",
-          "+5V",
+          "V5",
           "QSPI_CSn",
           "GND_2",
           "VIN",

@@ -23,8 +23,8 @@ export const ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS = {
   // Long row, USB end to opposite end. This board uses both 3V3 holes and
   // exposes BOOT0 at the last header position instead of an Arduino D4 pin.
   pin13: ["RST", "RESET"],
-  pin14: ["3V3", "3.3V"],
-  pin15: ["3V3_2", "3V3", "3.3V"],
+  pin14: ["3V3", "V3_3"],
+  pin15: ["3V3_2", "3V3", "V3_3"],
   pin16: ["GND"],
   pin17: ["A0", "GPIO16", "PA4", "DAC_OUT1"],
   pin18: ["A1", "GPIO17", "PA5", "DAC_OUT2"],

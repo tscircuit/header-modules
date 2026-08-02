@@ -32,7 +32,7 @@ export const ADAFRUIT_ITSYBITSY_M0_EXPRESS_PIN_LABELS = {
   pin24: ["A0", "PA02", "DAC0"],
   pin25: ["VHI"],
   pin26: ["EN"],
-  pin27: ["3V3", "3.3V"],
+  pin27: ["3V3", "V3_3"],
   pin28: ["RESET", "RST"],
 } as const
 

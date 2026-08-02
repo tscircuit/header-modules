@@ -8,6 +8,11 @@ test("Arduino Nano ATmega328P PCB and schematic snapshots", async () => {
   const circuit = new Circuit()
   circuit.add(React.createElement(ArduinoNanoATmega328P, { name: "U1" }))
   await circuit.renderUntilSettled()
+  expect(
+    circuit
+      .getCircuitJson()
+      .filter((element) => element.type === "source_failed_to_create_component_error"),
+  ).toHaveLength(0)
   const pcbSvg = await circuit.getSvg({ view: "pcb" })
   const schematicSvg = await circuit.getSvg({ view: "schematic" })
   expect(pcbSvg).toMatchSvgSnapshot(import.meta.path, "pcb")

@@ -21,7 +21,7 @@ export const ARDUINO_NANO_MATTER_PIN_LABELS = {
   pin14: ["D11"],
   pin15: ["D12"],
   pin16: ["D13"],
-  pin17: ["+3V3", "3V3"],
+  pin17: ["V3_3", "3V3"],
   pin18: ["AREF"],
   pin19: ["A0"],
   pin20: ["A1"],
@@ -31,7 +31,7 @@ export const ARDUINO_NANO_MATTER_PIN_LABELS = {
   pin24: ["A5", "SCL"],
   pin25: ["A6"],
   pin26: ["A7"],
-  pin27: ["+5V", "5V"],
+  pin27: ["V5", "5V"],
   pin28: ["NC"],
   pin29: ["GND_2", "GND"],
   pin30: ["VIN"],
@@ -75,7 +75,7 @@ export const ARDUINO_NANO_MATTER_PIN_ATTRIBUTES = {
   D11: SPI_MOSI,
   D12: SPI_MISO,
   D13: SPI_SCK,
-  "+3V3": {
+  V3_3: {
     providesPower: true,
     providesVoltage: "3.3V",
     includeInBoardPinout: true,
@@ -89,7 +89,7 @@ export const ARDUINO_NANO_MATTER_PIN_ATTRIBUTES = {
   A5: I2C_SCL,
   A6: GPIO,
   A7: GPIO,
-  "+5V": {
+  V5: {
     requiresPower: true,
     providesPower: true,
     requiresVoltage: "5V",
@@ -159,7 +159,7 @@ export const ArduinoNanoMatter = (props: ArduinoNanoMatterProps) => (
         direction: "top-to-bottom",
         pins: [
           "D13",
-          "+3V3",
+          "V3_3",
           "AREF",
           "A0",
           "A1",
@@ -169,7 +169,7 @@ export const ArduinoNanoMatter = (props: ArduinoNanoMatterProps) => (
           "A5",
           "A6",
           "A7",
-          "+5V",
+          "V5",
           "NC",
           "GND_2",
           "VIN",

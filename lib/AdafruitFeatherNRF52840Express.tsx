@@ -22,7 +22,7 @@ export const ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS = {
 
   // Long row, USB end to opposite end.
   pin13: ["RST", "RESET"],
-  pin14: ["3V", "3V3", "3.3V"],
+  pin14: ["3V", "3V3", "V3_3"],
   pin15: ["AREF", "A7", "21", "P0.31", "AIN7"],
   pin16: ["GND"],
   pin17: ["A0", "14", "P0.04", "AIN2"],

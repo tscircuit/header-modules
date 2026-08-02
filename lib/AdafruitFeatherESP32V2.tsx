@@ -22,7 +22,7 @@ export const ADAFRUIT_FEATHER_ESP32_V2_PIN_LABELS = {
   // Long row, USB end to opposite end. The AREF position is an unconnected
   // hole on the ESP32 V2; D37 is the input-only GPIO at the last position.
   pin13: ["RST", "RESET"],
-  pin14: ["3V3", "3.3V"],
+  pin14: ["3V3", "V3_3"],
   pin15: ["NC"],
   pin16: ["GND"],
   pin17: ["A0", "GPIO26", "ADC2_CH9", "DAC2"],

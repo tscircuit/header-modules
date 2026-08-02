@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit ItsyBitsy ESP32: two 14-pin female header rows. */
 export const ADAFRUIT_ITSYBITSY_ESP32_FOOTPRINT =
-  "pinrow28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(ITSY ESP32)" as const
+  "headermodule28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(ITSY ESP32)" as const
 
 export const ADAFRUIT_ITSYBITSY_ESP32_PIN_LABELS = {
   pin1: ["VBAT"],

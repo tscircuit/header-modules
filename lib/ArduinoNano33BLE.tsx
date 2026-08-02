@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Arduino Nano 33 BLE: the 30-pin Nano header arrangement. */
 export const ARDUINO_NANO_33_BLE_FOOTPRINT =
-  "pinrow30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO 33 BLE)" as const
+  "headermodule30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO 33 BLE)" as const
 
 export const ARDUINO_NANO_33_BLE_PIN_LABELS = {
   pin1: ["TX", "D1"],

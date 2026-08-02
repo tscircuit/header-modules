@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Arduino Nano Matter: MGM240S-based 30-pin Nano header arrangement. */
 export const ARDUINO_NANO_MATTER_FOOTPRINT =
-  "pinrow30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO MATTER)" as const
+  "headermodule30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO MATTER)" as const
 
 export const ARDUINO_NANO_MATTER_PIN_LABELS = {
   pin1: ["D0", "TX", "PIN_SERIAL_TX1"],

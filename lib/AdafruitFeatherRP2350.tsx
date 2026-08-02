@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit Feather RP2350 socket: one 12-pin row and one 16-pin row. */
 export const ADAFRUIT_FEATHER_RP2350_FOOTPRINT =
-  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER RP2350)" as const
+  "headermodule28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER RP2350)" as const
 
 export const ADAFRUIT_FEATHER_RP2350_PIN_LABELS = {
   pin1: ["VBAT"],

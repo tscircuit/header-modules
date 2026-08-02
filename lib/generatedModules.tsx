@@ -86,20 +86,20 @@ const UART_RX = {
   capabilities: ["uart_rx"],
 } as const satisfies PinAttributeMap
 
-const FOOTPRINT_F3 = "pinrow3_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F4 = "pinrow4_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F5 = "pinrow5_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F6 = "pinrow6_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F8 = "pinrow8_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F10 = "pinrow10_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F12 = "pinrow12_rows2_p2.54mm_py7.62mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F14 = "pinrow14_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F16 = "pinrow16_rows2_p2.54mm_py12.7mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F24 = "pinrow24_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F28 = "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F30 = "pinrow30_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F40 = "pinrow40_rows2_p2.54mm_py17.78mm_id1mm_od1.6mm_female_nopinlabels" as const
-const FOOTPRINT_F42 = "pinrow42_rows2_p2.54mm_py17.78mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F3 = "headermodule3_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F4 = "headermodule4_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F5 = "headermodule5_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F6 = "headermodule6_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F8 = "headermodule8_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F10 = "headermodule10_p2.54mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F12 = "headermodule12_rows2_p2.54mm_py7.62mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F14 = "headermodule14_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F16 = "headermodule16_rows2_p2.54mm_py12.7mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F24 = "headermodule24_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F28 = "headermodule28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F30 = "headermodule30_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F40 = "headermodule40_rows2_p2.54mm_py17.78mm_id1mm_od1.6mm_female_nopinlabels" as const
+const FOOTPRINT_F42 = "headermodule42_rows2_p2.54mm_py17.78mm_id1mm_od1.6mm_female_nopinlabels" as const
 
 export const FEATHER28_PIN_LABELS = {
   pin1: ["BAT"],

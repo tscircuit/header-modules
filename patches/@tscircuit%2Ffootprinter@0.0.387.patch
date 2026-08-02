@@ -2,7 +2,15 @@ diff --git a/dist/index.js b/dist/index.js
 index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282d93077b8 100644
 --- a/dist/index.js
 +++ b/dist/index.js
-@@ -3268,9 +3268,12 @@ var pinrow_def = base_def.extend({
+@@ -31,6 +31,7 @@ __export(fn_exports, {
+   ms013: () => ms013,
+   msop: () => msop,
+   pad: () => pad,
++  headermodule: () => pinrow,
+   pinrow: () => pinrow,
+   platedhole: () => platedhole2,
+   potentiometer: () => potentiometer,
+@@ -3268,9 +3269,12 @@ var pinrow_def = base_def.extend({
    fn: z24.string(),
    num_pins: z24.number().optional().default(6),
    rows: z24.union([z24.string(), z24.number()]).transform((val) => Number(val)).optional().default(1).describe("number of rows"),
@@ -15,7 +23,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
    male: z24.boolean().optional().describe("for male pin headers"),
    female: z24.boolean().optional().describe("for female pin headers"),
    smd: z24.boolean().optional().describe("surface mount device"),
-@@ -3288,7 +3291,11 @@ var pinrow_def = base_def.extend({
+@@ -3288,7 +3292,11 @@ var pinrow_def = base_def.extend({
    doublesidedpinlabel: z24.boolean().optional().default(false).describe("add silkscreen pins in top and bottom layers"),
    bottomsidepinlabel: z24.boolean().optional().default(false).describe(
      "place the silkscreen reference text on the bottom layer instead of top"
@@ -28,7 +36,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
  }).transform((data) => {
    const pinlabelAnchorSide = determinePinlabelAnchorSide(data);
    return {
-@@ -3307,15 +3314,32 @@ var pinrow_def = base_def.extend({
+@@ -3307,15 +3315,32 @@ var pinrow_def = base_def.extend({
        path: ["male", "female"]
      });
    }
@@ -61,7 +69,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
      pinlabelAnchorSide,
      pinlabelverticallyinverted,
      pinlabelorthogonal,
-@@ -3323,16 +3347,37 @@ var pinrow = (raw_params) => {
+@@ -3323,16 +3348,37 @@ var pinrow = (raw_params) => {
      pinlabeltextalignright,
      nopinlabels,
      doublesidedpinlabel,
@@ -103,7 +111,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
    const calculateAnchorPosition = ({
      xoff,
      yoff,
-@@ -3455,8 +3500,22 @@ var pinrow = (raw_params) => {
+@@ -3455,8 +3501,22 @@ var pinrow = (raw_params) => {
      }
    };
    const usedPositions = /* @__PURE__ */ new Set();
@@ -128,7 +136,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
      const xStart = -((num_pins - 1) / 2) * p;
      for (let i = 0; i < num_pins; i++) {
        const pinNumber = i + 1;
-@@ -3466,7 +3525,7 @@ var pinrow = (raw_params) => {
+@@ -3466,7 +3526,7 @@ var pinrow = (raw_params) => {
        usedPositions.add(posKey);
        addPin(pinNumber, xoff, 0);
      }
@@ -137,7 +145,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
      const xStart = -((numPinsPerRow - 1) / 2) * p;
      let currentPin = 1;
      for (let row = 0; row < rows && currentPin <= num_pins; row++) {
-@@ -3534,10 +3593,32 @@ var pinrow = (raw_params) => {
+@@ -3534,10 +3594,32 @@ var pinrow = (raw_params) => {
        );
      }
    }
@@ -171,7 +179,7 @@ index 8d7db1f54405212128e9d64c0777170d9a7a75ee..52ffa96d45b6523a2876d13c2f572282
    const padOuterHalfWidth = pinRowSpanX / 2 + padHalfWidth;
    const padOuterHalfHeight = pinRowSpanY / 2 + padHalfHeight;
    const bodyHalfWidth = pinRowSpanX / 2 + p / 2;
-@@ -3560,7 +3641,12 @@ var pinrow = (raw_params) => {
+@@ -3560,7 +3642,12 @@ var pinrow = (raw_params) => {
      layer: "top"
    };
    return {

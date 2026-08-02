@@ -6,7 +6,7 @@ import { rp2040Gpio } from "./rp2040PinAttributes"
  * USB is on the negative PCB X side when pcbRotation is zero.
  */
 export const SEEED_XIAO_RP2040_FOOTPRINT =
-  "pinrow14_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(XIAO RP2040)" as const
+  "headermodule14_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(XIAO RP2040)" as const
 
 export const SEEED_XIAO_RP2040_PIN_LABELS = {
   // Footprinter numbering follows its perimeter traversal. XIAO_PIN aliases

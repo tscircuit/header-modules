@@ -8,7 +8,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
  * module when a production Adafruit RP2350 pinout is required.
  */
 export const ADAFRUIT_QT_PY_RP2350_FOOTPRINT =
-  "pinrow14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY RP2350)" as const
+  "headermodule14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY RP2350)" as const
 
 export const ADAFRUIT_QT_PY_RP2350_PIN_LABELS = {
   pin1: ["A0"],

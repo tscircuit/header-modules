@@ -3,7 +3,7 @@ import { rp2040Gpio } from "./rp2040PinAttributes"
 
 /** Adafruit ItsyBitsy RP2040: two 14-pin female header rows. */
 export const ADAFRUIT_ITSYBITSY_RP2040_FOOTPRINT =
-  "pinrow28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(ITSY RP2040)" as const
+  "headermodule28_rows2_cols14_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(ITSY RP2040)" as const
 
 export const ADAFRUIT_ITSYBITSY_RP2040_PIN_LABELS = {
   pin1: ["VBAT"],

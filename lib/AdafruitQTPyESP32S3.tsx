@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit QT Py ESP32-S3: two seven-pin female header rows. */
 export const ADAFRUIT_QT_PY_ESP32_S3_FOOTPRINT =
-  "pinrow14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY ESP32-S3)" as const
+  "headermodule14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY ESP32-S3)" as const
 
 export const ADAFRUIT_QT_PY_ESP32_S3_PIN_LABELS = {
   pin1: ["A0", "GPIO18"],

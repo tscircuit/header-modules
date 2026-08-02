@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit ESP32-S3 TFT Feather: the two populated Feather header rows. */
 export const ADAFRUIT_FEATHER_ESP32_S3_TFT_FOOTPRINT =
-  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER S3 TFT)" as const
+  "headermodule28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER S3 TFT)" as const
 
 export const ADAFRUIT_FEATHER_ESP32_S3_TFT_PIN_LABELS = {
   pin1: ["VBAT"],

@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit Feather nRF52840 Express 12+16 female socket footprint. */
 export const ADAFRUIT_FEATHER_NRF52840_EXPRESS_FOOTPRINT =
-  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER NRF52840)" as const
+  "headermodule28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER NRF52840)" as const
 
 export const ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS = {
   // Short row, USB end to opposite end. Aliases are from Adafruit's nRF52840

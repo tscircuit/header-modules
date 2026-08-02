@@ -3,7 +3,7 @@ import { samdGpio } from "./samdPinAttributes"
 
 /** Adafruit QT Py SAMD21: two seven-pin female header rows. */
 export const ADAFRUIT_QT_PY_SAMD21_FOOTPRINT =
-  "pinrow14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY SAMD21)" as const
+  "headermodule14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY SAMD21)" as const
 
 export const ADAFRUIT_QT_PY_SAMD21_PIN_LABELS = {
   pin1: ["A0", "PA02"],

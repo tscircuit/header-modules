@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Arduino Nano 33 IoT: the 30-pin Nano header arrangement. */
 export const ARDUINO_NANO_33_IOT_FOOTPRINT =
-  "pinrow30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO 33 IOT)" as const
+  "headermodule30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO 33 IOT)" as const
 
 export const ARDUINO_NANO_33_IOT_PIN_LABELS = {
   pin1: ["TX", "D1"],

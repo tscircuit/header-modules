@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Arduino Nano ESP32: the ESP32-S3 Nano 30-pin header arrangement. */
 export const ARDUINO_NANO_ESP32_FOOTPRINT =
-  "pinrow30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO ESP32)" as const
+  "headermodule30_rows2_cols15_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(NANO ESP32)" as const
 
 export const ARDUINO_NANO_ESP32_PIN_LABELS = {
   pin1: ["TX", "D1", "GPIO43"],

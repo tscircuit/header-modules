@@ -3,7 +3,7 @@
 Model-specific tscircuit components for development boards that plug into
 female pin headers.
 
-The package includes the original model-specific modules plus a catalog of
+The package includes researched model-specific modules plus a catalog of
 popular breadboard/header modules from Adafruit, SparkFun, Pololu, Seeed,
 Arduino, Raspberry Pi, and common marketplace families. The catalog currently
 contains all 427 entries tracked in [`TODOS.md`](./TODOS.md).

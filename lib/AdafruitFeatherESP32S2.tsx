@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit ESP32-S2 Feather 12+16 female socket footprint. */
 export const ADAFRUIT_FEATHER_ESP32_S2_FOOTPRINT =
-  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_nopinlabels" as const
+  "headermodule28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER ESP32-S2)" as const
 
 export const ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS = {
   // Short row, USB end to opposite end.
@@ -22,8 +22,8 @@ export const ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS = {
   // Long row, USB end to opposite end. The final position is the board's
   // debug UART TX connection rather than a general-purpose GPIO.
   pin13: ["RST", "RESET"],
-  pin14: ["3V3", "3.3V"],
-  pin15: ["3V3_2", "3V3", "3.3V"],
+  pin14: ["3V3", "V3_3"],
+  pin15: ["3V3_2", "3V3", "V3_3"],
   pin16: ["GND"],
   pin17: ["A0", "GPIO18", "ADC2_CH7", "DAC_2"],
   pin18: ["A1", "GPIO17", "ADC2_CH6", "DAC_1"],
@@ -260,6 +260,36 @@ export const AdafruitFeatherESP32S2 = (props: AdafruitFeatherESP32S2Props) => (
     datasheetUrl="https://learn.adafruit.com/adafruit-esp32-s2-feather/pinouts"
     footprint={ADAFRUIT_FEATHER_ESP32_S2_FOOTPRINT}
     pinLabels={ADAFRUIT_FEATHER_ESP32_S2_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "BAT",
+      pin2: "EN",
+      pin3: "USB",
+      pin4: "D13",
+      pin5: "D12",
+      pin6: "D11",
+      pin7: "D10",
+      pin8: "D9",
+      pin9: "D6",
+      pin10: "D5",
+      pin11: "SCL",
+      pin12: "SDA",
+      pin13: "RST",
+      pin14: "3V3",
+      pin15: "3V3_2",
+      pin16: "GND",
+      pin17: "A0",
+      pin18: "A1",
+      pin19: "A2",
+      pin20: "A3",
+      pin21: "A4",
+      pin22: "A5",
+      pin23: "SCK",
+      pin24: "MOSI",
+      pin25: "MISO",
+      pin26: "RX",
+      pin27: "TX",
+      pin28: "DEBUG_TX",
+    }}
     pinAttributes={ADAFRUIT_FEATHER_ESP32_S2_PIN_ATTRIBUTES}
     schWidth={1.5}
     schHeight={2.6}

@@ -6,11 +6,11 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
  * when pcbRotation is zero.
  */
 export const POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_FOOTPRINT =
-  "pinrow16_rows2_p2.54mm_py12.7mm_id1mm_od1.6mm_female_nopinlabels" as const
+  "headermodule16_rows2_p2.54mm_py12.7mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(A4988 DRIVER)" as const
 
 export const POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_LABELS = {
-  // ENABLE/VMOT end to DIR/logic-GND end. The generic pinrow footprinter
-  // numbers around the perimeter, so the second physical row runs pin16→10.
+  // ENABLE/VMOT end to DIR/logic-GND end. The headermodule footprinter numbers
+  // around the perimeter, so the second physical row runs pin16→10.
   pin1: ["ENABLE", "EN", "nENABLE"],
   pin2: ["VMOT", "MOTOR_SUPPLY"],
   pin3: ["GND_MOTOR", "PGND", "GND"],
@@ -132,6 +132,24 @@ export const PololuA4988StepperMotorDriverCarrier = (
     datasheetUrl="https://www.pololu.com/product-info-merged/2980"
     footprint={POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_FOOTPRINT}
     pinLabels={POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "ENABLE",
+      pin2: "VMOT",
+      pin3: "GND_MOTOR",
+      pin4: "2B",
+      pin5: "2A",
+      pin6: "1A",
+      pin7: "1B",
+      pin8: "VDD",
+      pin9: "GND_LOGIC",
+      pin10: "DIR",
+      pin11: "STEP",
+      pin12: "SLEEP",
+      pin13: "RESET",
+      pin14: "MS3",
+      pin15: "MS2",
+      pin16: "MS1",
+    }}
     pinAttributes={POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_PIN_ATTRIBUTES}
     schWidth={2}
     schHeight={1.8}

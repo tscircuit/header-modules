@@ -6,7 +6,7 @@ import { rp2040Gpio } from "./rp2040PinAttributes"
  * USB is on the negative PCB X side when pcbRotation is zero.
  */
 export const SEEED_XIAO_RP2040_FOOTPRINT =
-  "pinrow14_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_nopinlabels" as const
+  "headermodule14_rows2_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(XIAO RP2040)" as const
 
 export const SEEED_XIAO_RP2040_PIN_LABELS = {
   // Footprinter numbering follows its perimeter traversal. XIAO_PIN aliases
@@ -84,6 +84,22 @@ export const SeeedXiaoRP2040 = (props: SeeedXiaoRP2040Props) => (
     datasheetUrl="https://wiki.seeedstudio.com/XIAO-RP2040/"
     footprint={SEEED_XIAO_RP2040_FOOTPRINT}
     pinLabels={SEEED_XIAO_RP2040_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "5V",
+      pin2: "D0",
+      pin3: "D1",
+      pin4: "D2",
+      pin5: "D3",
+      pin6: "D4",
+      pin7: "D5",
+      pin8: "D6",
+      pin9: "D7",
+      pin10: "D8",
+      pin11: "D9",
+      pin12: "D10",
+      pin13: "3V3",
+      pin14: "GND",
+    }}
     pinAttributes={SEEED_XIAO_RP2040_PIN_ATTRIBUTES}
     schWidth={1.675}
     schHeight={1.6}

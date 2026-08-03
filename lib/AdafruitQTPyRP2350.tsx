@@ -1,0 +1,140 @@
+import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
+
+/**
+ * QT Py-size RP2350 header module.
+ *
+ * There is not yet a public Adafruit QT Py RP2350 SKU. The pin order is kept
+ * as the standard QT Py 14-pin mechanical interface; use the Feather RP2350
+ * module when a production Adafruit RP2350 pinout is required.
+ */
+export const ADAFRUIT_QT_PY_RP2350_FOOTPRINT =
+  "headermodule14_rows2_cols7_p2.54mm_py15.24mm_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(QT PY RP2350)" as const
+
+export const ADAFRUIT_QT_PY_RP2350_PIN_LABELS = {
+  pin1: ["A0"],
+  pin2: ["A1"],
+  pin3: ["A2"],
+  pin4: ["A3"],
+  pin5: ["SDA"],
+  pin6: ["SCL"],
+  pin7: ["TX"],
+  pin8: ["RX"],
+  pin9: ["SCK"],
+  pin10: ["MISO"],
+  pin11: ["MOSI"],
+  pin12: ["V3_3", "3V3"],
+  pin13: ["GND"],
+  pin14: ["V5", "5V"],
+} as const
+
+const GPIO = {
+  isGpio: true,
+  includeInBoardPinout: true,
+  canUseInternalPullup: true,
+  canUseInternalPulldown: true,
+  canUseOpenDrain: true,
+  canUsePushPull: true,
+} as const satisfies PinAttributeMap
+const I2C_SDA = {
+  ...GPIO,
+  capabilities: ["i2c_sda"],
+  needsExternalPullup: true,
+} satisfies PinAttributeMap
+const I2C_SCL = {
+  ...GPIO,
+  capabilities: ["i2c_scl"],
+  needsExternalPullup: true,
+} satisfies PinAttributeMap
+const SPI_SCK = { ...GPIO, capabilities: ["spi_sck"] } satisfies PinAttributeMap
+const SPI_MISO = { ...GPIO, capabilities: ["spi_miso"] } satisfies PinAttributeMap
+const SPI_MOSI = { ...GPIO, capabilities: ["spi_mosi"] } satisfies PinAttributeMap
+const UART_TX = { ...GPIO, capabilities: ["uart_tx"] } satisfies PinAttributeMap
+const UART_RX = { ...GPIO, capabilities: ["uart_rx"] } satisfies PinAttributeMap
+
+export const ADAFRUIT_QT_PY_RP2350_PIN_ATTRIBUTES = {
+  A0: GPIO,
+  A1: GPIO,
+  A2: GPIO,
+  A3: GPIO,
+  SDA: I2C_SDA,
+  SCL: I2C_SCL,
+  TX: UART_TX,
+  RX: UART_RX,
+  SCK: SPI_SCK,
+  MISO: SPI_MISO,
+  MOSI: SPI_MOSI,
+  V3_3: {
+    providesPower: true,
+    providesVoltage: "3.3V",
+    includeInBoardPinout: true,
+  },
+  GND: {
+    requiresGround: true,
+    providesGround: true,
+    includeInBoardPinout: true,
+  },
+  V5: {
+    requiresPower: true,
+    providesPower: true,
+    requiresVoltage: "5V",
+    providesVoltage: "5V",
+    includeInBoardPinout: true,
+  },
+} as const satisfies Record<string, PinAttributeMap>
+
+type FixedProps =
+  | "datasheetUrl"
+  | "displayName"
+  | "footprint"
+  | "manufacturerPartNumber"
+  | "mfn"
+  | "pinAttributes"
+  | "pinLabels"
+  | "schHeight"
+  | "schPinArrangement"
+  | "schWidth"
+
+export type AdafruitQTPyRP2350Props = Omit<
+  ChipProps<typeof ADAFRUIT_QT_PY_RP2350_PIN_LABELS>,
+  FixedProps
+>
+
+export const AdafruitQTPyRP2350 = (props: AdafruitQTPyRP2350Props) => (
+  <chip
+    {...props}
+    displayName="Adafruit QT Py RP2350 (planned footprint)"
+    mfn="Adafruit"
+    datasheetUrl="https://learn.adafruit.com/adafruit-qt-py/pinouts"
+    footprint={ADAFRUIT_QT_PY_RP2350_FOOTPRINT}
+    pinLabels={ADAFRUIT_QT_PY_RP2350_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "A0",
+      pin2: "A1",
+      pin3: "A2",
+      pin4: "A3",
+      pin5: "SDA",
+      pin6: "SCL",
+      pin7: "TX",
+      pin8: "RX",
+      pin9: "SCK",
+      pin10: "MISO",
+      pin11: "MOSI",
+      pin12: "V3_3",
+      pin13: "GND",
+      pin14: "V5",
+    }}
+    pinAttributes={ADAFRUIT_QT_PY_RP2350_PIN_ATTRIBUTES}
+    schWidth={1.6}
+    schHeight={2.2}
+    schPinArrangement={{
+      leftSide: {
+        direction: "top-to-bottom",
+        pins: ["A0", "A1", "A2", "A3", "SDA", "SCL", "TX"],
+      },
+      rightSide: {
+        direction: "top-to-bottom",
+        pins: ["RX", "SCK", "MISO", "MOSI", "V3_3", "GND", "V5"],
+      },
+    }}
+  />
+)

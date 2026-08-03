@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit Feather STM32F405 Express 12+16 female socket footprint. */
 export const ADAFRUIT_FEATHER_STM32F405_EXPRESS_FOOTPRINT =
-  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_nopinlabels" as const
+  "headermodule28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER STM32F405)" as const
 
 export const ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS = {
   // Short row, USB end to opposite end. The MCU aliases and alternate
@@ -23,8 +23,8 @@ export const ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS = {
   // Long row, USB end to opposite end. This board uses both 3V3 holes and
   // exposes BOOT0 at the last header position instead of an Arduino D4 pin.
   pin13: ["RST", "RESET"],
-  pin14: ["3V3", "3.3V"],
-  pin15: ["3V3_2", "3V3", "3.3V"],
+  pin14: ["3V3", "V3_3"],
+  pin15: ["3V3_2", "3V3", "V3_3"],
   pin16: ["GND"],
   pin17: ["A0", "GPIO16", "PA4", "DAC_OUT1"],
   pin18: ["A1", "GPIO17", "PA5", "DAC_OUT2"],
@@ -261,6 +261,36 @@ export const AdafruitFeatherSTM32F405Express = (
     datasheetUrl="https://learn.adafruit.com/adafruit-stm32f405-feather-express/pinouts"
     footprint={ADAFRUIT_FEATHER_STM32F405_EXPRESS_FOOTPRINT}
     pinLabels={ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "BAT",
+      pin2: "EN",
+      pin3: "USB",
+      pin4: "D13",
+      pin5: "D12",
+      pin6: "D11",
+      pin7: "D10",
+      pin8: "D9",
+      pin9: "D6",
+      pin10: "D5",
+      pin11: "SCL",
+      pin12: "SDA",
+      pin13: "RST",
+      pin14: "3V3",
+      pin15: "3V3_2",
+      pin16: "GND",
+      pin17: "A0",
+      pin18: "A1",
+      pin19: "A2",
+      pin20: "A3",
+      pin21: "A4",
+      pin22: "A5",
+      pin23: "SCK",
+      pin24: "MOSI",
+      pin25: "MISO",
+      pin26: "RX",
+      pin27: "TX",
+      pin28: "BOOT0",
+    }}
     pinAttributes={ADAFRUIT_FEATHER_STM32F405_EXPRESS_PIN_ATTRIBUTES}
     schWidth={1.5}
     schHeight={2.6}

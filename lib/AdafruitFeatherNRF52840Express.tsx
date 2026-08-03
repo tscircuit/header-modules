@@ -2,7 +2,7 @@ import type { ChipProps, PinAttributeMap } from "@tscircuit/props"
 
 /** Adafruit Feather nRF52840 Express 12+16 female socket footprint. */
 export const ADAFRUIT_FEATHER_NRF52840_EXPRESS_FOOTPRINT =
-  "pinrow28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_nopinlabels" as const
+  "headermodule28_rows2_cols16_p2.54mm_py20.32mm_missing(1,2,3,4)_id1mm_od1.6mm_female_silkscreenborder_silkscreenlabel(FEATHER NRF52840)" as const
 
 export const ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS = {
   // Short row, USB end to opposite end. Aliases are from Adafruit's nRF52840
@@ -22,7 +22,7 @@ export const ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS = {
 
   // Long row, USB end to opposite end.
   pin13: ["RST", "RESET"],
-  pin14: ["3V", "3V3", "3.3V"],
+  pin14: ["3V", "3V3", "V3_3"],
   pin15: ["AREF", "A7", "21", "P0.31", "AIN7"],
   pin16: ["GND"],
   pin17: ["A0", "14", "P0.04", "AIN2"],
@@ -257,6 +257,36 @@ export const AdafruitFeatherNRF52840Express = (
     datasheetUrl="https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/pinouts"
     footprint={ADAFRUIT_FEATHER_NRF52840_EXPRESS_FOOTPRINT}
     pinLabels={ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_LABELS}
+    pcbPinLabels={{
+      pin1: "BAT",
+      pin2: "EN",
+      pin3: "USB",
+      pin4: "D13",
+      pin5: "D12",
+      pin6: "D11",
+      pin7: "D10",
+      pin8: "D9",
+      pin9: "D6",
+      pin10: "D5",
+      pin11: "SCL",
+      pin12: "SDA",
+      pin13: "RST",
+      pin14: "3V",
+      pin15: "AREF",
+      pin16: "GND",
+      pin17: "A0",
+      pin18: "A1",
+      pin19: "A2",
+      pin20: "A3",
+      pin21: "A4",
+      pin22: "A5",
+      pin23: "SCK",
+      pin24: "MOSI",
+      pin25: "MISO",
+      pin26: "RX",
+      pin27: "TX",
+      pin28: "D2",
+    }}
     pinAttributes={ADAFRUIT_FEATHER_NRF52840_EXPRESS_PIN_ATTRIBUTES}
     schWidth={1.5}
     schHeight={2.6}

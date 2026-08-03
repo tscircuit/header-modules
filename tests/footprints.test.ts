@@ -104,6 +104,26 @@ test("Seeed XIAO RP2040 is a 2x7 female header footprint", () => {
   ])
 })
 
+test("header modules include a silkscreen pin-one arrow", () => {
+  const arrow = fp
+    .string(SEEED_XIAO_RP2040_FOOTPRINT)
+    .circuitJson()
+    .find(
+      (element) =>
+        element.type === "pcb_silkscreen_path" &&
+        element.pcb_silkscreen_path_id === "pin_marker_1",
+    )
+
+  expect(arrow).toMatchObject({
+    pcb_component_id: "pin_marker_1",
+    layer: "top",
+  })
+  if (arrow?.type === "pcb_silkscreen_path") {
+    expect(arrow.route[0]).toMatchObject({ x: -8.57, y: 7.62 })
+    expect(arrow.route[3]).toMatchObject({ x: -8.57, y: 7.62 })
+  }
+})
+
 test("Pololu A4988 carrier is a 2x8 female header footprint", () => {
   const footprint = fp.string(
     POLOLU_A4988_STEPPER_MOTOR_DRIVER_CARRIER_FOOTPRINT,

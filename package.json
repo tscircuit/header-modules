@@ -35,7 +35,7 @@
     "@types/react": "^19.2.18",
     "bun-match-svg": "^0.0.15",
     "sharp": "0.32.6",
-    "tscircuit": "^0.0.2204",
+    "tscircuit": "^0.0.2207",
     "typescript": "^5.0.0"
   },
   "trustedDependencies": [

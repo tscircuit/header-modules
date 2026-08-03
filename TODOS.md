@@ -35,12 +35,12 @@ list was reviewed on 2026-08-01 against current catalogs and documentation from
 Already implemented and intentionally omitted: Adafruit Feather RP2040,
 Seeed XIAO RP2040, and Pololu A4988 Stepper Motor Driver Carrier.
 
-Implemented on the current branch: all 427 catalog entries. The researched
-modules are implemented as dedicated model-specific TSX files with their own
-tests; the remaining entries are exported from the generated catalog with
-explicit interface pin maps and female-header footprints. Their checked items
-remain in the list as an audit trail; the component source and tests are the
-authoritative implementation record.
+Implemented on the current branch: all 427 catalog entries. Every module is a
+dedicated model-specific TSX file with an explicit <chip />, complete
+`pinAttributes`, a unique female-header footprint, and its own PCB/schematic
+snapshot test. The legacy generated file now retains only shared catalog pin
+map constants; component source and tests are the authoritative implementation
+record.
 
 Catalog status: **427 implemented module candidates; 0 unchecked entries**.
 

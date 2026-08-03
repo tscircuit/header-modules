@@ -29,17 +29,14 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@tscircuit/footprinter": "0.0.387",
+    "@tscircuit/footprinter": "0.0.409",
     "@tscircuit/props": "^0.0.604",
     "@types/bun": "^1.3.14",
     "@types/react": "^19.2.18",
     "bun-match-svg": "^0.0.15",
     "sharp": "0.32.6",
-    "tscircuit": "^0.0.2193",
+    "tscircuit": "^0.0.2204",
     "typescript": "^5.0.0"
-  },
-  "patchedDependencies": {
-    "@tscircuit/footprinter@0.0.387": "patches/@tscircuit%2Ffootprinter@0.0.387.patch"
   },
   "trustedDependencies": [
     "sharp"

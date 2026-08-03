@@ -1779,149 +1779,13 @@ export const WeActSTM32F411BlackPill = (props: WeActSTM32F411BlackPillProps) => 
   />
 )
 
-/** Adafruit AHT20 Temperature & Humidity Breakout — I2C. */
-export const AdafruitAHT20TemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitAHT20TemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitAHT20TemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitAHT20TemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitAHT20TemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitAHT20TemperatureAndHumidityBreakout = (props: AdafruitAHT20TemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit AHT20 Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitAHT20TemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitAHT20TemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitAHT20TemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit AHT21 Temperature & Humidity Breakout — I2C. */
-export const AdafruitAHT21TemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitAHT21TemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitAHT21TemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitAHT21TemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitAHT21TemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitAHT21TemperatureAndHumidityBreakout = (props: AdafruitAHT21TemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit AHT21 Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitAHT21TemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitAHT21TemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitAHT21TemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SHT31-D Temperature & Humidity Breakout — I2C. */
-export const AdafruitSHT31DTemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSHT31DTemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSHT31DTemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSHT31DTemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitSHT31DTemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitSHT31DTemperatureAndHumidityBreakout = (props: AdafruitSHT31DTemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SHT31-D Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSHT31DTemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitSHT31DTemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSHT31DTemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SHT40 Temperature & Humidity Breakout — I2C. */
-export const AdafruitSHT40TemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSHT40TemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSHT40TemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSHT40TemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitSHT40TemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitSHT40TemperatureAndHumidityBreakout = (props: AdafruitSHT40TemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SHT40 Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSHT40TemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitSHT40TemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSHT40TemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SHT41 Temperature & Humidity Breakout — I2C. */
-export const AdafruitSHT41TemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSHT41TemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSHT41TemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSHT41TemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitSHT41TemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitSHT41TemperatureAndHumidityBreakout = (props: AdafruitSHT41TemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SHT41 Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSHT41TemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitSHT41TemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSHT41TemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit HDC3022 Precision Temperature & Humidity Breakout — I2C. */
-export const AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitHDC3022PrecisionTemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout = (props: AdafruitHDC3022PrecisionTemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit HDC3022 Precision Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitHDC3022PrecisionTemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit HTU21D-F Temperature & Humidity Breakout — I2C. */
-export const AdafruitHTU21DFTemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitHTU21DFTemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitHTU21DFTemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitHTU21DFTemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitHTU21DFTemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitHTU21DFTemperatureAndHumidityBreakout = (props: AdafruitHTU21DFTemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit HTU21D-F Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitHTU21DFTemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitHTU21DFTemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitHTU21DFTemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit Si7021 Temperature & Humidity Breakout — I2C. */
-export const AdafruitSi7021TemperatureAndHumidityBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSi7021TemperatureAndHumidityBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSi7021TemperatureAndHumidityBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSi7021TemperatureAndHumidityBreakoutProps = ChipProps<typeof AdafruitSi7021TemperatureAndHumidityBreakout_PIN_LABELS>
-export const AdafruitSi7021TemperatureAndHumidityBreakout = (props: AdafruitSi7021TemperatureAndHumidityBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit Si7021 Temperature & Humidity Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSi7021TemperatureAndHumidityBreakout_FOOTPRINT}
-    pinLabels={AdafruitSi7021TemperatureAndHumidityBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSi7021TemperatureAndHumidityBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Adafruit BME280 Temperature/Humidity/Pressure Breakout — I2C/SPI. */
 export const AdafruitBME280TemperatureHumidityPressureBreakout_PIN_LABELS = I2CSPI8_PIN_LABELS
@@ -2085,77 +1949,9 @@ export const AdafruitLPS22HBPressureSensorBreakout = (props: AdafruitLPS22HBPres
   />
 )
 
-/** Adafruit MCP9808 High-Accuracy Temperature Breakout — I2C. */
-export const AdafruitMCP9808HighAccuracyTemperatureBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitMCP9808HighAccuracyTemperatureBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitMCP9808HighAccuracyTemperatureBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitMCP9808HighAccuracyTemperatureBreakoutProps = ChipProps<typeof AdafruitMCP9808HighAccuracyTemperatureBreakout_PIN_LABELS>
-export const AdafruitMCP9808HighAccuracyTemperatureBreakout = (props: AdafruitMCP9808HighAccuracyTemperatureBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit MCP9808 High-Accuracy Temperature Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitMCP9808HighAccuracyTemperatureBreakout_FOOTPRINT}
-    pinLabels={AdafruitMCP9808HighAccuracyTemperatureBreakout_PIN_LABELS}
-    pinAttributes={AdafruitMCP9808HighAccuracyTemperatureBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit TMP117 High-Accuracy Temperature Breakout — I2C. */
-export const AdafruitTMP117HighAccuracyTemperatureBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitTMP117HighAccuracyTemperatureBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitTMP117HighAccuracyTemperatureBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitTMP117HighAccuracyTemperatureBreakoutProps = ChipProps<typeof AdafruitTMP117HighAccuracyTemperatureBreakout_PIN_LABELS>
-export const AdafruitTMP117HighAccuracyTemperatureBreakout = (props: AdafruitTMP117HighAccuracyTemperatureBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit TMP117 High-Accuracy Temperature Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitTMP117HighAccuracyTemperatureBreakout_FOOTPRINT}
-    pinLabels={AdafruitTMP117HighAccuracyTemperatureBreakout_PIN_LABELS}
-    pinAttributes={AdafruitTMP117HighAccuracyTemperatureBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit ADT7410 High-Accuracy Temperature Breakout — I2C. */
-export const AdafruitADT7410HighAccuracyTemperatureBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitADT7410HighAccuracyTemperatureBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitADT7410HighAccuracyTemperatureBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitADT7410HighAccuracyTemperatureBreakoutProps = ChipProps<typeof AdafruitADT7410HighAccuracyTemperatureBreakout_PIN_LABELS>
-export const AdafruitADT7410HighAccuracyTemperatureBreakout = (props: AdafruitADT7410HighAccuracyTemperatureBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit ADT7410 High-Accuracy Temperature Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitADT7410HighAccuracyTemperatureBreakout_FOOTPRINT}
-    pinLabels={AdafruitADT7410HighAccuracyTemperatureBreakout_PIN_LABELS}
-    pinAttributes={AdafruitADT7410HighAccuracyTemperatureBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit MLX90614 Contactless IR Thermometer Breakout — I2C. */
-export const AdafruitMLX90614ContactlessIRThermometerBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitMLX90614ContactlessIRThermometerBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitMLX90614ContactlessIRThermometerBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitMLX90614ContactlessIRThermometerBreakoutProps = ChipProps<typeof AdafruitMLX90614ContactlessIRThermometerBreakout_PIN_LABELS>
-export const AdafruitMLX90614ContactlessIRThermometerBreakout = (props: AdafruitMLX90614ContactlessIRThermometerBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit MLX90614 Contactless IR Thermometer Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitMLX90614ContactlessIRThermometerBreakout_FOOTPRINT}
-    pinLabels={AdafruitMLX90614ContactlessIRThermometerBreakout_PIN_LABELS}
-    pinAttributes={AdafruitMLX90614ContactlessIRThermometerBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Adafruit MCP9600 Thermocouple Amplifier Breakout — I2C. */
 export const AdafruitMCP9600ThermocoupleAmplifierBreakout_PIN_LABELS = AUDIO6_PIN_LABELS
@@ -2229,113 +2025,11 @@ export const AdafruitMAX31865RTDPT100PT1000AmplifierBreakout = (props: AdafruitM
   />
 )
 
-/** Adafruit SCD30 NDIR CO2 Breakout — I2C. */
-export const AdafruitSCD30NDIRCO2Breakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSCD30NDIRCO2Breakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSCD30NDIRCO2Breakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSCD30NDIRCO2BreakoutProps = ChipProps<typeof AdafruitSCD30NDIRCO2Breakout_PIN_LABELS>
-export const AdafruitSCD30NDIRCO2Breakout = (props: AdafruitSCD30NDIRCO2BreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SCD30 NDIR CO2 Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSCD30NDIRCO2Breakout_FOOTPRINT}
-    pinLabels={AdafruitSCD30NDIRCO2Breakout_PIN_LABELS}
-    pinAttributes={AdafruitSCD30NDIRCO2Breakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SCD40 CO2 Sensor Breakout — I2C. */
-export const AdafruitSCD40CO2SensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSCD40CO2SensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSCD40CO2SensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSCD40CO2SensorBreakoutProps = ChipProps<typeof AdafruitSCD40CO2SensorBreakout_PIN_LABELS>
-export const AdafruitSCD40CO2SensorBreakout = (props: AdafruitSCD40CO2SensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SCD40 CO2 Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSCD40CO2SensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitSCD40CO2SensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSCD40CO2SensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SCD41 CO2 Sensor Breakout — I2C. */
-export const AdafruitSCD41CO2SensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSCD41CO2SensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSCD41CO2SensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSCD41CO2SensorBreakoutProps = ChipProps<typeof AdafruitSCD41CO2SensorBreakout_PIN_LABELS>
-export const AdafruitSCD41CO2SensorBreakout = (props: AdafruitSCD41CO2SensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SCD41 CO2 Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSCD41CO2SensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitSCD41CO2SensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSCD41CO2SensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SGP30 Air Quality Sensor Breakout — I2C. */
-export const AdafruitSGP30AirQualitySensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSGP30AirQualitySensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSGP30AirQualitySensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSGP30AirQualitySensorBreakoutProps = ChipProps<typeof AdafruitSGP30AirQualitySensorBreakout_PIN_LABELS>
-export const AdafruitSGP30AirQualitySensorBreakout = (props: AdafruitSGP30AirQualitySensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SGP30 Air Quality Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSGP30AirQualitySensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitSGP30AirQualitySensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSGP30AirQualitySensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SGP40 Air Quality Sensor Breakout — I2C. */
-export const AdafruitSGP40AirQualitySensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSGP40AirQualitySensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSGP40AirQualitySensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSGP40AirQualitySensorBreakoutProps = ChipProps<typeof AdafruitSGP40AirQualitySensorBreakout_PIN_LABELS>
-export const AdafruitSGP40AirQualitySensorBreakout = (props: AdafruitSGP40AirQualitySensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SGP40 Air Quality Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSGP40AirQualitySensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitSGP40AirQualitySensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSGP40AirQualitySensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit SGP41 Air Quality Sensor Breakout — I2C. */
-export const AdafruitSGP41AirQualitySensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitSGP41AirQualitySensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitSGP41AirQualitySensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitSGP41AirQualitySensorBreakoutProps = ChipProps<typeof AdafruitSGP41AirQualitySensorBreakout_PIN_LABELS>
-export const AdafruitSGP41AirQualitySensorBreakout = (props: AdafruitSGP41AirQualitySensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit SGP41 Air Quality Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitSGP41AirQualitySensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitSGP41AirQualitySensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitSGP41AirQualitySensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** SparkFun ENS160 Indoor Air Quality Breakout — I2C/SPI. */
 export const SparkFunENS160IndoorAirQualityBreakout_PIN_LABELS = I2CSPI8_PIN_LABELS
@@ -2355,23 +2049,6 @@ export const SparkFunENS160IndoorAirQualityBreakout = (props: SparkFunENS160Indo
   />
 )
 
-/** SparkFun ENS160 + BME280 Environmental Combo Breakout — I2C. */
-export const SparkFunENS160BME280EnvironmentalComboBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const SparkFunENS160BME280EnvironmentalComboBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const SparkFunENS160BME280EnvironmentalComboBreakout_FOOTPRINT = FOOTPRINT_F4
-export type SparkFunENS160BME280EnvironmentalComboBreakoutProps = ChipProps<typeof SparkFunENS160BME280EnvironmentalComboBreakout_PIN_LABELS>
-export const SparkFunENS160BME280EnvironmentalComboBreakout = (props: SparkFunENS160BME280EnvironmentalComboBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="SparkFun ENS160 + BME280 Environmental Combo Breakout"
-    mfn="SparkFun"
-    footprint={SparkFunENS160BME280EnvironmentalComboBreakout_FOOTPRINT}
-    pinLabels={SparkFunENS160BME280EnvironmentalComboBreakout_PIN_LABELS}
-    pinAttributes={SparkFunENS160BME280EnvironmentalComboBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Adafruit PMSA003I Particulate Matter Sensor Breakout — I2C/UART adapter. */
 export const AdafruitPMSA003IParticulateMatterSensorBreakout_PIN_LABELS = I2CUART6_PIN_LABELS
@@ -2409,167 +2086,14 @@ export const SparkFunBMV080ParticulateMatterSensorBreakout = (props: SparkFunBMV
   />
 )
 
-/** Adafruit BH1750 Ambient Light Sensor Breakout — I2C. */
-export const AdafruitBH1750AmbientLightSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitBH1750AmbientLightSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitBH1750AmbientLightSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitBH1750AmbientLightSensorBreakoutProps = ChipProps<typeof AdafruitBH1750AmbientLightSensorBreakout_PIN_LABELS>
-export const AdafruitBH1750AmbientLightSensorBreakout = (props: AdafruitBH1750AmbientLightSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit BH1750 Ambient Light Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitBH1750AmbientLightSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitBH1750AmbientLightSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitBH1750AmbientLightSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit TSL2591 High Dynamic Range Light Sensor Breakout — I2C. */
-export const AdafruitTSL2591HighDynamicRangeLightSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitTSL2591HighDynamicRangeLightSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitTSL2591HighDynamicRangeLightSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitTSL2591HighDynamicRangeLightSensorBreakoutProps = ChipProps<typeof AdafruitTSL2591HighDynamicRangeLightSensorBreakout_PIN_LABELS>
-export const AdafruitTSL2591HighDynamicRangeLightSensorBreakout = (props: AdafruitTSL2591HighDynamicRangeLightSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit TSL2591 High Dynamic Range Light Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitTSL2591HighDynamicRangeLightSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitTSL2591HighDynamicRangeLightSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitTSL2591HighDynamicRangeLightSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit TSL2561 Digital Luminosity Sensor Breakout — I2C. */
-export const AdafruitTSL2561DigitalLuminositySensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitTSL2561DigitalLuminositySensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitTSL2561DigitalLuminositySensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitTSL2561DigitalLuminositySensorBreakoutProps = ChipProps<typeof AdafruitTSL2561DigitalLuminositySensorBreakout_PIN_LABELS>
-export const AdafruitTSL2561DigitalLuminositySensorBreakout = (props: AdafruitTSL2561DigitalLuminositySensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit TSL2561 Digital Luminosity Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitTSL2561DigitalLuminositySensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitTSL2561DigitalLuminositySensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitTSL2561DigitalLuminositySensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit VEML7700 Lux Sensor Breakout — I2C. */
-export const AdafruitVEML7700LuxSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitVEML7700LuxSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitVEML7700LuxSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitVEML7700LuxSensorBreakoutProps = ChipProps<typeof AdafruitVEML7700LuxSensorBreakout_PIN_LABELS>
-export const AdafruitVEML7700LuxSensorBreakout = (props: AdafruitVEML7700LuxSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit VEML7700 Lux Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitVEML7700LuxSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitVEML7700LuxSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitVEML7700LuxSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** SparkFun VEML6030 Ambient Light Sensor Breakout — I2C. */
-export const SparkFunVEML6030AmbientLightSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const SparkFunVEML6030AmbientLightSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const SparkFunVEML6030AmbientLightSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type SparkFunVEML6030AmbientLightSensorBreakoutProps = ChipProps<typeof SparkFunVEML6030AmbientLightSensorBreakout_PIN_LABELS>
-export const SparkFunVEML6030AmbientLightSensorBreakout = (props: SparkFunVEML6030AmbientLightSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="SparkFun VEML6030 Ambient Light Sensor Breakout"
-    mfn="SparkFun"
-    footprint={SparkFunVEML6030AmbientLightSensorBreakout_FOOTPRINT}
-    pinLabels={SparkFunVEML6030AmbientLightSensorBreakout_PIN_LABELS}
-    pinAttributes={SparkFunVEML6030AmbientLightSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit LTR390 UV Light Sensor Breakout — I2C. */
-export const AdafruitLTR390UVLightSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitLTR390UVLightSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitLTR390UVLightSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitLTR390UVLightSensorBreakoutProps = ChipProps<typeof AdafruitLTR390UVLightSensorBreakout_PIN_LABELS>
-export const AdafruitLTR390UVLightSensorBreakout = (props: AdafruitLTR390UVLightSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit LTR390 UV Light Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitLTR390UVLightSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitLTR390UVLightSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitLTR390UVLightSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** SparkFun VEML6075 UVA/UVB Sensor Breakout — I2C. */
-export const SparkFunVEML6075UVAUVBSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const SparkFunVEML6075UVAUVBSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const SparkFunVEML6075UVAUVBSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type SparkFunVEML6075UVAUVBSensorBreakoutProps = ChipProps<typeof SparkFunVEML6075UVAUVBSensorBreakout_PIN_LABELS>
-export const SparkFunVEML6075UVAUVBSensorBreakout = (props: SparkFunVEML6075UVAUVBSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="SparkFun VEML6075 UVA/UVB Sensor Breakout"
-    mfn="SparkFun"
-    footprint={SparkFunVEML6075UVAUVBSensorBreakout_FOOTPRINT}
-    pinLabels={SparkFunVEML6075UVAUVBSensorBreakout_PIN_LABELS}
-    pinAttributes={SparkFunVEML6075UVAUVBSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit AS7341 10-Channel Light/Color Sensor Breakout — I2C. */
-export const AdafruitAS734110ChannelLightColorSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitAS734110ChannelLightColorSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitAS734110ChannelLightColorSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitAS734110ChannelLightColorSensorBreakoutProps = ChipProps<typeof AdafruitAS734110ChannelLightColorSensorBreakout_PIN_LABELS>
-export const AdafruitAS734110ChannelLightColorSensorBreakout = (props: AdafruitAS734110ChannelLightColorSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit AS7341 10-Channel Light/Color Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitAS734110ChannelLightColorSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitAS734110ChannelLightColorSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitAS734110ChannelLightColorSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** SparkFun AS7343 14-Channel Spectral Sensor Breakout — I2C. */
-export const SparkFunAS734314ChannelSpectralSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const SparkFunAS734314ChannelSpectralSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const SparkFunAS734314ChannelSpectralSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type SparkFunAS734314ChannelSpectralSensorBreakoutProps = ChipProps<typeof SparkFunAS734314ChannelSpectralSensorBreakout_PIN_LABELS>
-export const SparkFunAS734314ChannelSpectralSensorBreakout = (props: SparkFunAS734314ChannelSpectralSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="SparkFun AS7343 14-Channel Spectral Sensor Breakout"
-    mfn="SparkFun"
-    footprint={SparkFunAS734314ChannelSpectralSensorBreakout_FOOTPRINT}
-    pinLabels={SparkFunAS734314ChannelSpectralSensorBreakout_PIN_LABELS}
-    pinAttributes={SparkFunAS734314ChannelSpectralSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** SparkFun AS7262 Visible Spectral Sensor Breakout — I2C/UART. */
 export const SparkFunAS7262VisibleSpectralSensorBreakout_PIN_LABELS = I2CUART6_PIN_LABELS
@@ -2607,113 +2131,11 @@ export const SparkFunAS7263NIRSpectralSensorBreakout = (props: SparkFunAS7263NIR
   />
 )
 
-/** Adafruit APDS9960 Proximity/Gesture/RGB Breakout — I2C. */
-export const AdafruitAPDS9960ProximityGestureRGBBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitAPDS9960ProximityGestureRGBBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitAPDS9960ProximityGestureRGBBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitAPDS9960ProximityGestureRGBBreakoutProps = ChipProps<typeof AdafruitAPDS9960ProximityGestureRGBBreakout_PIN_LABELS>
-export const AdafruitAPDS9960ProximityGestureRGBBreakout = (props: AdafruitAPDS9960ProximityGestureRGBBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit APDS9960 Proximity/Gesture/RGB Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitAPDS9960ProximityGestureRGBBreakout_FOOTPRINT}
-    pinLabels={AdafruitAPDS9960ProximityGestureRGBBreakout_PIN_LABELS}
-    pinAttributes={AdafruitAPDS9960ProximityGestureRGBBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit APDS9250 Digital RGB/IR Sensor Breakout — I2C. */
-export const AdafruitAPDS9250DigitalRGBIRSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitAPDS9250DigitalRGBIRSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitAPDS9250DigitalRGBIRSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitAPDS9250DigitalRGBIRSensorBreakoutProps = ChipProps<typeof AdafruitAPDS9250DigitalRGBIRSensorBreakout_PIN_LABELS>
-export const AdafruitAPDS9250DigitalRGBIRSensorBreakout = (props: AdafruitAPDS9250DigitalRGBIRSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit APDS9250 Digital RGB/IR Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitAPDS9250DigitalRGBIRSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitAPDS9250DigitalRGBIRSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitAPDS9250DigitalRGBIRSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit APDS9999 Proximity/Lux/Color Sensor Breakout — I2C. */
-export const AdafruitAPDS9999ProximityLuxColorSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitAPDS9999ProximityLuxColorSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitAPDS9999ProximityLuxColorSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitAPDS9999ProximityLuxColorSensorBreakoutProps = ChipProps<typeof AdafruitAPDS9999ProximityLuxColorSensorBreakout_PIN_LABELS>
-export const AdafruitAPDS9999ProximityLuxColorSensorBreakout = (props: AdafruitAPDS9999ProximityLuxColorSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit APDS9999 Proximity/Lux/Color Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitAPDS9999ProximityLuxColorSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitAPDS9999ProximityLuxColorSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitAPDS9999ProximityLuxColorSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** SparkFun OPT4048 Tristimulus Color Sensor Breakout — I2C. */
-export const SparkFunOPT4048TristimulusColorSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const SparkFunOPT4048TristimulusColorSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const SparkFunOPT4048TristimulusColorSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type SparkFunOPT4048TristimulusColorSensorBreakoutProps = ChipProps<typeof SparkFunOPT4048TristimulusColorSensorBreakout_PIN_LABELS>
-export const SparkFunOPT4048TristimulusColorSensorBreakout = (props: SparkFunOPT4048TristimulusColorSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="SparkFun OPT4048 Tristimulus Color Sensor Breakout"
-    mfn="SparkFun"
-    footprint={SparkFunOPT4048TristimulusColorSensorBreakout_FOOTPRINT}
-    pinLabels={SparkFunOPT4048TristimulusColorSensorBreakout_PIN_LABELS}
-    pinAttributes={SparkFunOPT4048TristimulusColorSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit VCNL4040 Proximity and Lux Sensor Breakout — I2C. */
-export const AdafruitVCNL4040ProximityAndLuxSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitVCNL4040ProximityAndLuxSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitVCNL4040ProximityAndLuxSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitVCNL4040ProximityAndLuxSensorBreakoutProps = ChipProps<typeof AdafruitVCNL4040ProximityAndLuxSensorBreakout_PIN_LABELS>
-export const AdafruitVCNL4040ProximityAndLuxSensorBreakout = (props: AdafruitVCNL4040ProximityAndLuxSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit VCNL4040 Proximity and Lux Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitVCNL4040ProximityAndLuxSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitVCNL4040ProximityAndLuxSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitVCNL4040ProximityAndLuxSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit VCNL4020 Proximity and Light Sensor Breakout — I2C. */
-export const AdafruitVCNL4020ProximityAndLightSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitVCNL4020ProximityAndLightSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitVCNL4020ProximityAndLightSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitVCNL4020ProximityAndLightSensorBreakoutProps = ChipProps<typeof AdafruitVCNL4020ProximityAndLightSensorBreakout_PIN_LABELS>
-export const AdafruitVCNL4020ProximityAndLightSensorBreakout = (props: AdafruitVCNL4020ProximityAndLightSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit VCNL4020 Proximity and Light Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitVCNL4020ProximityAndLightSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitVCNL4020ProximityAndLightSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitVCNL4020ProximityAndLightSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** SparkFun TEMT6000 Ambient Light Sensor Breakout — analog. */
 export const SparkFunTEMT6000AmbientLightSensorBreakout_PIN_LABELS = ANALOG3_PIN_LABELS
@@ -2769,95 +2191,10 @@ export const SparkFunML8511UVSensorBreakout = (props: SparkFunML8511UVSensorBrea
   />
 )
 
-/** Adafruit AMG8833 Grid-EYE 8x8 Thermal Camera Breakout — I2C. */
-export const AdafruitAMG8833GridEYE8x8ThermalCameraBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitAMG8833GridEYE8x8ThermalCameraBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitAMG8833GridEYE8x8ThermalCameraBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitAMG8833GridEYE8x8ThermalCameraBreakoutProps = ChipProps<typeof AdafruitAMG8833GridEYE8x8ThermalCameraBreakout_PIN_LABELS>
-export const AdafruitAMG8833GridEYE8x8ThermalCameraBreakout = (props: AdafruitAMG8833GridEYE8x8ThermalCameraBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit AMG8833 Grid-EYE 8x8 Thermal Camera Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitAMG8833GridEYE8x8ThermalCameraBreakout_FOOTPRINT}
-    pinLabels={AdafruitAMG8833GridEYE8x8ThermalCameraBreakout_PIN_LABELS}
-    pinAttributes={AdafruitAMG8833GridEYE8x8ThermalCameraBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit MLX90640 24x32 Thermal Camera Breakout, 55 degree — I2C. */
-export const AdafruitMLX9064024x32ThermalCameraBreakout55Degree_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitMLX9064024x32ThermalCameraBreakout55Degree_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitMLX9064024x32ThermalCameraBreakout55Degree_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitMLX9064024x32ThermalCameraBreakout55DegreeProps = ChipProps<typeof AdafruitMLX9064024x32ThermalCameraBreakout55Degree_PIN_LABELS>
-export const AdafruitMLX9064024x32ThermalCameraBreakout55Degree = (props: AdafruitMLX9064024x32ThermalCameraBreakout55DegreeProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit MLX90640 24x32 Thermal Camera Breakout, 55 degree"
-    mfn="Adafruit"
-    footprint={AdafruitMLX9064024x32ThermalCameraBreakout55Degree_FOOTPRINT}
-    pinLabels={AdafruitMLX9064024x32ThermalCameraBreakout55Degree_PIN_LABELS}
-    pinAttributes={AdafruitMLX9064024x32ThermalCameraBreakout55Degree_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit MLX90640 24x32 Thermal Camera Breakout, 110 degree — I2C. */
-export const AdafruitMLX9064024x32ThermalCameraBreakout110Degree_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitMLX9064024x32ThermalCameraBreakout110Degree_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitMLX9064024x32ThermalCameraBreakout110Degree_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitMLX9064024x32ThermalCameraBreakout110DegreeProps = ChipProps<typeof AdafruitMLX9064024x32ThermalCameraBreakout110Degree_PIN_LABELS>
-export const AdafruitMLX9064024x32ThermalCameraBreakout110Degree = (props: AdafruitMLX9064024x32ThermalCameraBreakout110DegreeProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit MLX90640 24x32 Thermal Camera Breakout, 110 degree"
-    mfn="Adafruit"
-    footprint={AdafruitMLX9064024x32ThermalCameraBreakout110Degree_FOOTPRINT}
-    pinLabels={AdafruitMLX9064024x32ThermalCameraBreakout110Degree_PIN_LABELS}
-    pinAttributes={AdafruitMLX9064024x32ThermalCameraBreakout110Degree_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit MLX90641 16x12 Thermal Camera Breakout — I2C. */
-export const AdafruitMLX9064116x12ThermalCameraBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitMLX9064116x12ThermalCameraBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitMLX9064116x12ThermalCameraBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitMLX9064116x12ThermalCameraBreakoutProps = ChipProps<typeof AdafruitMLX9064116x12ThermalCameraBreakout_PIN_LABELS>
-export const AdafruitMLX9064116x12ThermalCameraBreakout = (props: AdafruitMLX9064116x12ThermalCameraBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit MLX90641 16x12 Thermal Camera Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitMLX9064116x12ThermalCameraBreakout_FOOTPRINT}
-    pinLabels={AdafruitMLX9064116x12ThermalCameraBreakout_PIN_LABELS}
-    pinAttributes={AdafruitMLX9064116x12ThermalCameraBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** SparkFun MLX90632 FIR Temperature Sensor Breakout — I2C. */
-export const SparkFunMLX90632FIRTemperatureSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const SparkFunMLX90632FIRTemperatureSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const SparkFunMLX90632FIRTemperatureSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type SparkFunMLX90632FIRTemperatureSensorBreakoutProps = ChipProps<typeof SparkFunMLX90632FIRTemperatureSensorBreakout_PIN_LABELS>
-export const SparkFunMLX90632FIRTemperatureSensorBreakout = (props: SparkFunMLX90632FIRTemperatureSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="SparkFun MLX90632 FIR Temperature Sensor Breakout"
-    mfn="SparkFun"
-    footprint={SparkFunMLX90632FIRTemperatureSensorBreakout_FOOTPRINT}
-    pinLabels={SparkFunMLX90632FIRTemperatureSensorBreakout_PIN_LABELS}
-    pinAttributes={SparkFunMLX90632FIRTemperatureSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Adafruit LIS3DH Triple-Axis Accelerometer Breakout — I2C/SPI. */
 export const AdafruitLIS3DHTripleAxisAccelerometerBreakout_PIN_LABELS = I2CSPI8_PIN_LABELS
@@ -2967,23 +2304,6 @@ export const SparkFunADXL375HighGAccelerometerBreakout = (props: SparkFunADXL375
   />
 )
 
-/** Adafruit MMA8451 Triple-Axis Accelerometer Breakout — I2C. */
-export const AdafruitMMA8451TripleAxisAccelerometerBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitMMA8451TripleAxisAccelerometerBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitMMA8451TripleAxisAccelerometerBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitMMA8451TripleAxisAccelerometerBreakoutProps = ChipProps<typeof AdafruitMMA8451TripleAxisAccelerometerBreakout_PIN_LABELS>
-export const AdafruitMMA8451TripleAxisAccelerometerBreakout = (props: AdafruitMMA8451TripleAxisAccelerometerBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit MMA8451 Triple-Axis Accelerometer Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitMMA8451TripleAxisAccelerometerBreakout_FOOTPRINT}
-    pinLabels={AdafruitMMA8451TripleAxisAccelerometerBreakout_PIN_LABELS}
-    pinAttributes={AdafruitMMA8451TripleAxisAccelerometerBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** SparkFun BMA400 Triple-Axis Accelerometer Breakout — I2C/SPI. */
 export const SparkFunBMA400TripleAxisAccelerometerBreakout_PIN_LABELS = I2CSPI8_PIN_LABELS
@@ -3129,23 +2449,6 @@ export const SparkFunICM42688P6DoFIMUBreakout = (props: SparkFunICM42688P6DoFIMU
   />
 )
 
-/** Generic MPU-6050 GY-521 IMU Module — I2C. */
-export const GenericMPU6050GY521IMUModule_PIN_LABELS = I2C4_PIN_LABELS
-export const GenericMPU6050GY521IMUModule_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const GenericMPU6050GY521IMUModule_FOOTPRINT = FOOTPRINT_F4
-export type GenericMPU6050GY521IMUModuleProps = ChipProps<typeof GenericMPU6050GY521IMUModule_PIN_LABELS>
-export const GenericMPU6050GY521IMUModule = (props: GenericMPU6050GY521IMUModuleProps) => (
-  <chip
-    {...props}
-    displayName="Generic MPU-6050 GY-521 IMU Module"
-    mfn="Generic"
-    footprint={GenericMPU6050GY521IMUModule_FOOTPRINT}
-    pinLabels={GenericMPU6050GY521IMUModule_PIN_LABELS}
-    pinAttributes={GenericMPU6050GY521IMUModule_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Generic MPU-9250 GY-91 9-DoF Module — I2C/SPI. */
 export const GenericMPU9250GY919DoFModule_PIN_LABELS = I2CSPI8_PIN_LABELS
@@ -3219,23 +2522,6 @@ export const SparkFunBNO0869DoFIMUBreakout = (props: SparkFunBNO0869DoFIMUBreako
   />
 )
 
-/** Adafruit NXP FXOS8700 + FXAS21002 9-DoF Breakout — I2C. */
-export const AdafruitNXPFXOS8700FXAS210029DoFBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitNXPFXOS8700FXAS210029DoFBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitNXPFXOS8700FXAS210029DoFBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitNXPFXOS8700FXAS210029DoFBreakoutProps = ChipProps<typeof AdafruitNXPFXOS8700FXAS210029DoFBreakout_PIN_LABELS>
-export const AdafruitNXPFXOS8700FXAS210029DoFBreakout = (props: AdafruitNXPFXOS8700FXAS210029DoFBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit NXP FXOS8700 + FXAS21002 9-DoF Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitNXPFXOS8700FXAS210029DoFBreakout_FOOTPRINT}
-    pinLabels={AdafruitNXPFXOS8700FXAS210029DoFBreakout_PIN_LABELS}
-    pinAttributes={AdafruitNXPFXOS8700FXAS210029DoFBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Adafruit LSM303AGR Accelerometer/Magnetometer Breakout — I2C/SPI. */
 export const AdafruitLSM303AGRAccelerometerMagnetometerBreakout_PIN_LABELS = I2CSPI8_PIN_LABELS
@@ -3273,23 +2559,6 @@ export const PololuLIS3MDL3AxisMagnetometerCarrier = (props: PololuLIS3MDL3AxisM
   />
 )
 
-/** Adafruit MMC5603 Triple-Axis Magnetometer Breakout — I2C. */
-export const AdafruitMMC5603TripleAxisMagnetometerBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitMMC5603TripleAxisMagnetometerBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitMMC5603TripleAxisMagnetometerBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitMMC5603TripleAxisMagnetometerBreakoutProps = ChipProps<typeof AdafruitMMC5603TripleAxisMagnetometerBreakout_PIN_LABELS>
-export const AdafruitMMC5603TripleAxisMagnetometerBreakout = (props: AdafruitMMC5603TripleAxisMagnetometerBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit MMC5603 Triple-Axis Magnetometer Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitMMC5603TripleAxisMagnetometerBreakout_FOOTPRINT}
-    pinLabels={AdafruitMMC5603TripleAxisMagnetometerBreakout_PIN_LABELS}
-    pinAttributes={AdafruitMMC5603TripleAxisMagnetometerBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** SparkFun MLX90393 Triple-Axis Magnetometer Breakout — I2C/SPI. */
 export const SparkFunMLX90393TripleAxisMagnetometerBreakout_PIN_LABELS = I2CSPI8_PIN_LABELS
@@ -3309,59 +2578,8 @@ export const SparkFunMLX90393TripleAxisMagnetometerBreakout = (props: SparkFunML
   />
 )
 
-/** Adafruit TLV493D Triple-Axis Magnetometer Breakout — I2C. */
-export const AdafruitTLV493DTripleAxisMagnetometerBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitTLV493DTripleAxisMagnetometerBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitTLV493DTripleAxisMagnetometerBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitTLV493DTripleAxisMagnetometerBreakoutProps = ChipProps<typeof AdafruitTLV493DTripleAxisMagnetometerBreakout_PIN_LABELS>
-export const AdafruitTLV493DTripleAxisMagnetometerBreakout = (props: AdafruitTLV493DTripleAxisMagnetometerBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit TLV493D Triple-Axis Magnetometer Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitTLV493DTripleAxisMagnetometerBreakout_FOOTPRINT}
-    pinLabels={AdafruitTLV493DTripleAxisMagnetometerBreakout_PIN_LABELS}
-    pinAttributes={AdafruitTLV493DTripleAxisMagnetometerBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Adafruit TMAG5273 Triple-Axis Hall Sensor Breakout — I2C. */
-export const AdafruitTMAG5273TripleAxisHallSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
-export const AdafruitTMAG5273TripleAxisHallSensorBreakout_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const AdafruitTMAG5273TripleAxisHallSensorBreakout_FOOTPRINT = FOOTPRINT_F4
-export type AdafruitTMAG5273TripleAxisHallSensorBreakoutProps = ChipProps<typeof AdafruitTMAG5273TripleAxisHallSensorBreakout_PIN_LABELS>
-export const AdafruitTMAG5273TripleAxisHallSensorBreakout = (props: AdafruitTMAG5273TripleAxisHallSensorBreakoutProps) => (
-  <chip
-    {...props}
-    displayName="Adafruit TMAG5273 Triple-Axis Hall Sensor Breakout"
-    mfn="Adafruit"
-    footprint={AdafruitTMAG5273TripleAxisHallSensorBreakout_FOOTPRINT}
-    pinLabels={AdafruitTMAG5273TripleAxisHallSensorBreakout_PIN_LABELS}
-    pinAttributes={AdafruitTMAG5273TripleAxisHallSensorBreakout_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Generic QMC5883L GY-271 Compass Module — I2C. */
-export const GenericQMC5883LGY271CompassModule_PIN_LABELS = I2C4_PIN_LABELS
-export const GenericQMC5883LGY271CompassModule_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const GenericQMC5883LGY271CompassModule_FOOTPRINT = FOOTPRINT_F4
-export type GenericQMC5883LGY271CompassModuleProps = ChipProps<typeof GenericQMC5883LGY271CompassModule_PIN_LABELS>
-export const GenericQMC5883LGY271CompassModule = (props: GenericQMC5883LGY271CompassModuleProps) => (
-  <chip
-    {...props}
-    displayName="Generic QMC5883L GY-271 Compass Module"
-    mfn="Generic"
-    footprint={GenericQMC5883LGY271CompassModule_FOOTPRINT}
-    pinLabels={GenericQMC5883LGY271CompassModule_PIN_LABELS}
-    pinAttributes={GenericQMC5883LGY271CompassModule_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Adafruit AS5600 Magnetic Angle Sensor Breakout — I2C/analog. */
 export const AdafruitAS5600MagneticAngleSensorBreakout_PIN_LABELS = I2C5_PIN_LABELS
@@ -3489,77 +2707,8 @@ export const SparkFunOpticalTrackingOdometrySensorBreakout = (props: SparkFunOpt
   />
 )
 
-/** Pololu VL53L0X Time-of-Flight Distance Sensor Carrier — I2C. */
-export const PololuVL53L0XTimeOfFlightDistanceSensorCarrier_PIN_LABELS = I2C4_PIN_LABELS
-export const PololuVL53L0XTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const PololuVL53L0XTimeOfFlightDistanceSensorCarrier_FOOTPRINT = FOOTPRINT_F4
-export type PololuVL53L0XTimeOfFlightDistanceSensorCarrierProps = ChipProps<typeof PololuVL53L0XTimeOfFlightDistanceSensorCarrier_PIN_LABELS>
-export const PololuVL53L0XTimeOfFlightDistanceSensorCarrier = (props: PololuVL53L0XTimeOfFlightDistanceSensorCarrierProps) => (
-  <chip
-    {...props}
-    displayName="Pololu VL53L0X Time-of-Flight Distance Sensor Carrier"
-    mfn="Pololu"
-    footprint={PololuVL53L0XTimeOfFlightDistanceSensorCarrier_FOOTPRINT}
-    pinLabels={PololuVL53L0XTimeOfFlightDistanceSensorCarrier_PIN_LABELS}
-    pinAttributes={PololuVL53L0XTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Pololu VL53L1X Time-of-Flight Distance Sensor Carrier — I2C. */
-export const PololuVL53L1XTimeOfFlightDistanceSensorCarrier_PIN_LABELS = I2C4_PIN_LABELS
-export const PololuVL53L1XTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const PololuVL53L1XTimeOfFlightDistanceSensorCarrier_FOOTPRINT = FOOTPRINT_F4
-export type PololuVL53L1XTimeOfFlightDistanceSensorCarrierProps = ChipProps<typeof PololuVL53L1XTimeOfFlightDistanceSensorCarrier_PIN_LABELS>
-export const PololuVL53L1XTimeOfFlightDistanceSensorCarrier = (props: PololuVL53L1XTimeOfFlightDistanceSensorCarrierProps) => (
-  <chip
-    {...props}
-    displayName="Pololu VL53L1X Time-of-Flight Distance Sensor Carrier"
-    mfn="Pololu"
-    footprint={PololuVL53L1XTimeOfFlightDistanceSensorCarrier_FOOTPRINT}
-    pinLabels={PololuVL53L1XTimeOfFlightDistanceSensorCarrier_PIN_LABELS}
-    pinAttributes={PololuVL53L1XTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
-/** Pololu VL53L4CD Time-of-Flight Distance Sensor Carrier — I2C. */
-export const PololuVL53L4CDTimeOfFlightDistanceSensorCarrier_PIN_LABELS = I2C4_PIN_LABELS
-export const PololuVL53L4CDTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const PololuVL53L4CDTimeOfFlightDistanceSensorCarrier_FOOTPRINT = FOOTPRINT_F4
-export type PololuVL53L4CDTimeOfFlightDistanceSensorCarrierProps = ChipProps<typeof PololuVL53L4CDTimeOfFlightDistanceSensorCarrier_PIN_LABELS>
-export const PololuVL53L4CDTimeOfFlightDistanceSensorCarrier = (props: PololuVL53L4CDTimeOfFlightDistanceSensorCarrierProps) => (
-  <chip
-    {...props}
-    displayName="Pololu VL53L4CD Time-of-Flight Distance Sensor Carrier"
-    mfn="Pololu"
-    footprint={PololuVL53L4CDTimeOfFlightDistanceSensorCarrier_FOOTPRINT}
-    pinLabels={PololuVL53L4CDTimeOfFlightDistanceSensorCarrier_PIN_LABELS}
-    pinAttributes={PololuVL53L4CDTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
-
-/** Pololu VL53L4CX Time-of-Flight Distance Sensor Carrier — I2C. */
-export const PololuVL53L4CXTimeOfFlightDistanceSensorCarrier_PIN_LABELS = I2C4_PIN_LABELS
-export const PololuVL53L4CXTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES = I2C4_PIN_ATTRIBUTES
-export const PololuVL53L4CXTimeOfFlightDistanceSensorCarrier_FOOTPRINT = FOOTPRINT_F4
-export type PololuVL53L4CXTimeOfFlightDistanceSensorCarrierProps = ChipProps<typeof PololuVL53L4CXTimeOfFlightDistanceSensorCarrier_PIN_LABELS>
-export const PololuVL53L4CXTimeOfFlightDistanceSensorCarrier = (props: PololuVL53L4CXTimeOfFlightDistanceSensorCarrierProps) => (
-  <chip
-    {...props}
-    displayName="Pololu VL53L4CX Time-of-Flight Distance Sensor Carrier"
-    mfn="Pololu"
-    footprint={PololuVL53L4CXTimeOfFlightDistanceSensorCarrier_FOOTPRINT}
-    pinLabels={PololuVL53L4CXTimeOfFlightDistanceSensorCarrier_PIN_LABELS}
-    pinAttributes={PololuVL53L4CXTimeOfFlightDistanceSensorCarrier_PIN_ATTRIBUTES}
-    schWidth={2.4}
-    schHeight={1.8}
-  />
-)
 
 /** Adafruit VL53L5CX 8x8 Time-of-Flight Sensor Breakout — I2C. */
 export const AdafruitVL53L5CX8x8TimeOfFlightSensorBreakout_PIN_LABELS = I2C4_PIN_LABELS
